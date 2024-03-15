@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             this.PHeader = new System.Windows.Forms.Panel();
             this.PFunc = new System.Windows.Forms.Panel();
             this.btB5 = new System.Windows.Forms.Button();
@@ -47,6 +47,8 @@
             this.notBook = new System.Windows.Forms.TabControl();
             this.tKhoiDong = new System.Windows.Forms.TabPage();
             this.picIconKd = new System.Windows.Forms.PictureBox();
+            this.audioTool = new AxWMPLib.AxWindowsMediaPlayer();
+            this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tKhamPha = new System.Windows.Forms.TabPage();
@@ -60,7 +62,32 @@
             this.picDulich2 = new System.Windows.Forms.PictureBox();
             this.picDulich1 = new System.Windows.Forms.PictureBox();
             this.picDanhThang1 = new System.Windows.Forms.PictureBox();
+            this.tLuyenTap = new System.Windows.Forms.TabPage();
+            this.picQuestDl = new System.Windows.Forms.PictureBox();
+            this.picQuestDt = new System.Windows.Forms.PictureBox();
+            this.picIconLt = new System.Windows.Forms.PictureBox();
+            this.btDtDa4 = new System.Windows.Forms.Button();
+            this.btDtDa3 = new System.Windows.Forms.Button();
+            this.btDtDa2 = new System.Windows.Forms.Button();
+            this.btDlDa4 = new System.Windows.Forms.Button();
+            this.btDlDa3 = new System.Windows.Forms.Button();
+            this.btDlDa2 = new System.Windows.Forms.Button();
+            this.btDlDa1 = new System.Windows.Forms.Button();
+            this.btDtDa1 = new System.Windows.Forms.Button();
+            this.lbDlRs4 = new System.Windows.Forms.Label();
+            this.lbDlRs3 = new System.Windows.Forms.Label();
+            this.lbDtRs4 = new System.Windows.Forms.Label();
+            this.lbDlRs2 = new System.Windows.Forms.Label();
+            this.lbDtRs3 = new System.Windows.Forms.Label();
+            this.lbDlRs1 = new System.Windows.Forms.Label();
+            this.lbDtRs2 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lbDtRs1 = new System.Windows.Forms.Label();
             this.tVanDung = new System.Windows.Forms.TabPage();
+            this.mediaVanDungB1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.picVanDungB1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -71,7 +98,9 @@
             this.listVideo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbKdCmCap = new System.Windows.Forms.Label();
             this.picIconKdCm = new System.Windows.Forms.PictureBox();
+            this.mediaKDCm = new AxWMPLib.AxWindowsMediaPlayer();
             this.tLTCommon = new System.Windows.Forms.TabPage();
+            this.btAdQues = new System.Windows.Forms.Button();
             this.btLtCm10 = new System.Windows.Forms.Button();
             this.btLtCm9 = new System.Windows.Forms.Button();
             this.btLtCm4 = new System.Windows.Forms.Button();
@@ -95,41 +124,14 @@
             this.lbLtCap1Cm = new System.Windows.Forms.Label();
             this.lbLtHead1Cm = new System.Windows.Forms.Label();
             this.picIcoLtCm = new System.Windows.Forms.PictureBox();
-            this.audioTool = new AxWMPLib.AxWindowsMediaPlayer();
-            this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.mediaVanDungB1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.mediaKDCm = new AxWMPLib.AxWindowsMediaPlayer();
-            this.btAdQues = new System.Windows.Forms.Button();
-            this.lbDtRs1 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.lbDtRs2 = new System.Windows.Forms.Label();
-            this.lbDlRs1 = new System.Windows.Forms.Label();
-            this.lbDtRs3 = new System.Windows.Forms.Label();
-            this.lbDlRs2 = new System.Windows.Forms.Label();
-            this.lbDtRs4 = new System.Windows.Forms.Label();
-            this.lbDlRs3 = new System.Windows.Forms.Label();
-            this.lbDlRs4 = new System.Windows.Forms.Label();
-            this.btDtDa1 = new System.Windows.Forms.Button();
-            this.btDlDa1 = new System.Windows.Forms.Button();
-            this.btDlDa2 = new System.Windows.Forms.Button();
-            this.btDlDa3 = new System.Windows.Forms.Button();
-            this.btDlDa4 = new System.Windows.Forms.Button();
-            this.btDtDa2 = new System.Windows.Forms.Button();
-            this.btDtDa3 = new System.Windows.Forms.Button();
-            this.btDtDa4 = new System.Windows.Forms.Button();
-            this.picIconLt = new System.Windows.Forms.PictureBox();
-            this.picQuestDt = new System.Windows.Forms.PictureBox();
-            this.picQuestDl = new System.Windows.Forms.PictureBox();
-            this.tLuyenTap = new System.Windows.Forms.TabPage();
             this.PFunc.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.notBook.SuspendLayout();
             this.tKhoiDong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconKd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.audioTool)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
             this.tKhamPha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconKp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDanhThang3)).BeginInit();
@@ -139,23 +141,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.picDulich2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDulich1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDanhThang1)).BeginInit();
+            this.tLuyenTap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuestDl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuestDt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIconLt)).BeginInit();
             this.tVanDung.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaVanDungB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVanDungB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconVd)).BeginInit();
             this.tKdCommon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconKdCm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaKDCm)).BeginInit();
             this.tLTCommon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picQ2LtCm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picQ1LtCm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIcoLtCm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.audioTool)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaVanDungB1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaKDCm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picIconLt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuestDt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuestDl)).BeginInit();
-            this.tLuyenTap.SuspendLayout();
             this.SuspendLayout();
             // 
             // PHeader
@@ -313,6 +313,7 @@
             this.notBook.SelectedIndex = 0;
             this.notBook.Size = new System.Drawing.Size(931, 513);
             this.notBook.TabIndex = 0;
+            this.notBook.SelectedIndexChanged += new System.EventHandler(this.notBook_SelectedIndexChanged);
             // 
             // tKhoiDong
             // 
@@ -336,6 +337,24 @@
             this.picIconKd.Size = new System.Drawing.Size(107, 33);
             this.picIconKd.TabIndex = 2;
             this.picIconKd.TabStop = false;
+            // 
+            // audioTool
+            // 
+            this.audioTool.Enabled = true;
+            this.audioTool.Location = new System.Drawing.Point(37, 51);
+            this.audioTool.Name = "audioTool";
+            this.audioTool.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("audioTool.OcxState")));
+            this.audioTool.Size = new System.Drawing.Size(847, 52);
+            this.audioTool.TabIndex = 1;
+            // 
+            // mediaPlayer
+            // 
+            this.mediaPlayer.Enabled = true;
+            this.mediaPlayer.Location = new System.Drawing.Point(124, 143);
+            this.mediaPlayer.Name = "mediaPlayer";
+            this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
+            this.mediaPlayer.Size = new System.Drawing.Size(678, 323);
+            this.mediaPlayer.TabIndex = 1;
             // 
             // label3
             // 
@@ -471,6 +490,256 @@
             this.picDanhThang1.Click += new System.EventHandler(this.picDanhThang1_Click);
             this.picDanhThang1.DoubleClick += new System.EventHandler(this.picDanhThang1_DoubleClick);
             // 
+            // tLuyenTap
+            // 
+            this.tLuyenTap.Controls.Add(this.picQuestDl);
+            this.tLuyenTap.Controls.Add(this.picQuestDt);
+            this.tLuyenTap.Controls.Add(this.picIconLt);
+            this.tLuyenTap.Controls.Add(this.btDtDa4);
+            this.tLuyenTap.Controls.Add(this.btDtDa3);
+            this.tLuyenTap.Controls.Add(this.btDtDa2);
+            this.tLuyenTap.Controls.Add(this.btDlDa4);
+            this.tLuyenTap.Controls.Add(this.btDlDa3);
+            this.tLuyenTap.Controls.Add(this.btDlDa2);
+            this.tLuyenTap.Controls.Add(this.btDlDa1);
+            this.tLuyenTap.Controls.Add(this.btDtDa1);
+            this.tLuyenTap.Controls.Add(this.lbDlRs4);
+            this.tLuyenTap.Controls.Add(this.lbDlRs3);
+            this.tLuyenTap.Controls.Add(this.lbDtRs4);
+            this.tLuyenTap.Controls.Add(this.lbDlRs2);
+            this.tLuyenTap.Controls.Add(this.lbDtRs3);
+            this.tLuyenTap.Controls.Add(this.lbDlRs1);
+            this.tLuyenTap.Controls.Add(this.lbDtRs2);
+            this.tLuyenTap.Controls.Add(this.label18);
+            this.tLuyenTap.Controls.Add(this.label20);
+            this.tLuyenTap.Controls.Add(this.label19);
+            this.tLuyenTap.Controls.Add(this.label17);
+            this.tLuyenTap.Controls.Add(this.lbDtRs1);
+            this.tLuyenTap.Location = new System.Drawing.Point(4, 22);
+            this.tLuyenTap.Name = "tLuyenTap";
+            this.tLuyenTap.Padding = new System.Windows.Forms.Padding(3);
+            this.tLuyenTap.Size = new System.Drawing.Size(923, 487);
+            this.tLuyenTap.TabIndex = 2;
+            this.tLuyenTap.Text = "LuyenTap";
+            this.tLuyenTap.UseVisualStyleBackColor = true;
+            // 
+            // picQuestDl
+            // 
+            this.picQuestDl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picQuestDl.Location = new System.Drawing.Point(477, 72);
+            this.picQuestDl.Name = "picQuestDl";
+            this.picQuestDl.Size = new System.Drawing.Size(440, 209);
+            this.picQuestDl.TabIndex = 3;
+            this.picQuestDl.TabStop = false;
+            this.picQuestDl.DoubleClick += new System.EventHandler(this.picQuestDl_DoubleClick);
+            // 
+            // picQuestDt
+            // 
+            this.picQuestDt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picQuestDt.Location = new System.Drawing.Point(6, 72);
+            this.picQuestDt.Name = "picQuestDt";
+            this.picQuestDt.Size = new System.Drawing.Size(440, 209);
+            this.picQuestDt.TabIndex = 3;
+            this.picQuestDt.TabStop = false;
+            this.picQuestDt.Click += new System.EventHandler(this.picQuestDt_Click);
+            this.picQuestDt.DoubleClick += new System.EventHandler(this.picQuestDt_DoubleClick);
+            // 
+            // picIconLt
+            // 
+            this.picIconLt.Location = new System.Drawing.Point(10, 6);
+            this.picIconLt.Name = "picIconLt";
+            this.picIconLt.Size = new System.Drawing.Size(107, 33);
+            this.picIconLt.TabIndex = 2;
+            this.picIconLt.TabStop = false;
+            // 
+            // btDtDa4
+            // 
+            this.btDtDa4.Location = new System.Drawing.Point(383, 438);
+            this.btDtDa4.Name = "btDtDa4";
+            this.btDtDa4.Size = new System.Drawing.Size(63, 34);
+            this.btDtDa4.TabIndex = 0;
+            this.btDtDa4.Text = "Đáp Án";
+            this.btDtDa4.UseVisualStyleBackColor = true;
+            this.btDtDa4.Click += new System.EventHandler(this.btDtDa4_Click);
+            // 
+            // btDtDa3
+            // 
+            this.btDtDa3.Location = new System.Drawing.Point(383, 396);
+            this.btDtDa3.Name = "btDtDa3";
+            this.btDtDa3.Size = new System.Drawing.Size(63, 34);
+            this.btDtDa3.TabIndex = 0;
+            this.btDtDa3.Text = "Đáp Án";
+            this.btDtDa3.UseVisualStyleBackColor = true;
+            this.btDtDa3.Click += new System.EventHandler(this.btDtDa3_Click);
+            // 
+            // btDtDa2
+            // 
+            this.btDtDa2.Location = new System.Drawing.Point(383, 360);
+            this.btDtDa2.Name = "btDtDa2";
+            this.btDtDa2.Size = new System.Drawing.Size(63, 34);
+            this.btDtDa2.TabIndex = 0;
+            this.btDtDa2.Text = "Đáp Án";
+            this.btDtDa2.UseVisualStyleBackColor = true;
+            this.btDtDa2.Click += new System.EventHandler(this.btDtDa2_Click);
+            // 
+            // btDlDa4
+            // 
+            this.btDlDa4.Location = new System.Drawing.Point(854, 435);
+            this.btDlDa4.Name = "btDlDa4";
+            this.btDlDa4.Size = new System.Drawing.Size(63, 34);
+            this.btDlDa4.TabIndex = 0;
+            this.btDlDa4.Text = "Đáp Án";
+            this.btDlDa4.UseVisualStyleBackColor = true;
+            this.btDlDa4.Click += new System.EventHandler(this.btDlDa4_Click);
+            // 
+            // btDlDa3
+            // 
+            this.btDlDa3.Location = new System.Drawing.Point(854, 397);
+            this.btDlDa3.Name = "btDlDa3";
+            this.btDlDa3.Size = new System.Drawing.Size(63, 34);
+            this.btDlDa3.TabIndex = 0;
+            this.btDlDa3.Text = "Đáp Án";
+            this.btDlDa3.UseVisualStyleBackColor = true;
+            this.btDlDa3.Click += new System.EventHandler(this.btDlDa3_Click);
+            // 
+            // btDlDa2
+            // 
+            this.btDlDa2.Location = new System.Drawing.Point(854, 359);
+            this.btDlDa2.Name = "btDlDa2";
+            this.btDlDa2.Size = new System.Drawing.Size(63, 34);
+            this.btDlDa2.TabIndex = 0;
+            this.btDlDa2.Text = "Đáp Án";
+            this.btDlDa2.UseVisualStyleBackColor = true;
+            this.btDlDa2.Click += new System.EventHandler(this.btDlDa2_Click);
+            // 
+            // btDlDa1
+            // 
+            this.btDlDa1.Location = new System.Drawing.Point(854, 321);
+            this.btDlDa1.Name = "btDlDa1";
+            this.btDlDa1.Size = new System.Drawing.Size(63, 34);
+            this.btDlDa1.TabIndex = 0;
+            this.btDlDa1.Text = "Đáp Án";
+            this.btDlDa1.UseVisualStyleBackColor = true;
+            this.btDlDa1.Click += new System.EventHandler(this.btDlDa1_Click);
+            // 
+            // btDtDa1
+            // 
+            this.btDtDa1.Location = new System.Drawing.Point(383, 321);
+            this.btDtDa1.Name = "btDtDa1";
+            this.btDtDa1.Size = new System.Drawing.Size(63, 34);
+            this.btDtDa1.TabIndex = 0;
+            this.btDtDa1.Text = "Đáp Án";
+            this.btDtDa1.UseVisualStyleBackColor = true;
+            this.btDtDa1.Click += new System.EventHandler(this.btDtDa1_Click);
+            // 
+            // lbDlRs4
+            // 
+            this.lbDlRs4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDlRs4.Location = new System.Drawing.Point(477, 438);
+            this.lbDlRs4.Name = "lbDlRs4";
+            this.lbDlRs4.Size = new System.Drawing.Size(371, 34);
+            this.lbDlRs4.TabIndex = 0;
+            this.lbDlRs4.Text = "label1";
+            // 
+            // lbDlRs3
+            // 
+            this.lbDlRs3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDlRs3.Location = new System.Drawing.Point(477, 399);
+            this.lbDlRs3.Name = "lbDlRs3";
+            this.lbDlRs3.Size = new System.Drawing.Size(371, 34);
+            this.lbDlRs3.TabIndex = 0;
+            this.lbDlRs3.Text = "label1";
+            // 
+            // lbDtRs4
+            // 
+            this.lbDtRs4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDtRs4.Location = new System.Drawing.Point(7, 438);
+            this.lbDtRs4.Name = "lbDtRs4";
+            this.lbDtRs4.Size = new System.Drawing.Size(371, 34);
+            this.lbDtRs4.TabIndex = 0;
+            this.lbDtRs4.Text = "label1";
+            // 
+            // lbDlRs2
+            // 
+            this.lbDlRs2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDlRs2.Location = new System.Drawing.Point(477, 360);
+            this.lbDlRs2.Name = "lbDlRs2";
+            this.lbDlRs2.Size = new System.Drawing.Size(371, 34);
+            this.lbDlRs2.TabIndex = 0;
+            this.lbDlRs2.Text = "label1";
+            // 
+            // lbDtRs3
+            // 
+            this.lbDtRs3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDtRs3.Location = new System.Drawing.Point(7, 399);
+            this.lbDtRs3.Name = "lbDtRs3";
+            this.lbDtRs3.Size = new System.Drawing.Size(370, 34);
+            this.lbDtRs3.TabIndex = 0;
+            this.lbDtRs3.Text = "label1";
+            // 
+            // lbDlRs1
+            // 
+            this.lbDlRs1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDlRs1.Location = new System.Drawing.Point(477, 321);
+            this.lbDlRs1.Name = "lbDlRs1";
+            this.lbDlRs1.Size = new System.Drawing.Size(371, 34);
+            this.lbDlRs1.TabIndex = 0;
+            this.lbDlRs1.Text = "label1";
+            // 
+            // lbDtRs2
+            // 
+            this.lbDtRs2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDtRs2.Location = new System.Drawing.Point(7, 360);
+            this.lbDtRs2.Name = "lbDtRs2";
+            this.lbDtRs2.Size = new System.Drawing.Size(370, 34);
+            this.lbDtRs2.TabIndex = 0;
+            this.lbDtRs2.Text = "label1";
+            // 
+            // label18
+            // 
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label18.Location = new System.Drawing.Point(477, 284);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(440, 34);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Đáp Án Về Khu Du Lịch Em Biết !";
+            // 
+            // label20
+            // 
+            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label20.Location = new System.Drawing.Point(477, 42);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(440, 34);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "2. Chia Sẻ Với Các Bạn Về Một Khu Du Lịch Ở Đồng Nai Mà Em Đã Được Tham Quan !";
+            // 
+            // label19
+            // 
+            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label19.Location = new System.Drawing.Point(6, 42);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(440, 34);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "1. Kể Tên Một Số Cảnh Đẹp Của Quê Hương Đồng Nai";
+            // 
+            // label17
+            // 
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label17.Location = new System.Drawing.Point(6, 284);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(440, 34);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Đáp Án Về Các Cảnh Đẹp Ở Đồng Nai !";
+            // 
+            // lbDtRs1
+            // 
+            this.lbDtRs1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDtRs1.Location = new System.Drawing.Point(7, 321);
+            this.lbDtRs1.Name = "lbDtRs1";
+            this.lbDtRs1.Size = new System.Drawing.Size(370, 34);
+            this.lbDtRs1.TabIndex = 0;
+            this.lbDtRs1.Text = "label1";
+            // 
             // tVanDung
             // 
             this.tVanDung.Controls.Add(this.mediaVanDungB1);
@@ -485,6 +754,15 @@
             this.tVanDung.TabIndex = 3;
             this.tVanDung.Text = "VanDung";
             this.tVanDung.UseVisualStyleBackColor = true;
+            // 
+            // mediaVanDungB1
+            // 
+            this.mediaVanDungB1.Enabled = true;
+            this.mediaVanDungB1.Location = new System.Drawing.Point(439, 100);
+            this.mediaVanDungB1.Name = "mediaVanDungB1";
+            this.mediaVanDungB1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaVanDungB1.OcxState")));
+            this.mediaVanDungB1.Size = new System.Drawing.Size(460, 368);
+            this.mediaVanDungB1.TabIndex = 6;
             // 
             // picVanDungB1
             // 
@@ -551,13 +829,14 @@
             this.listVideo});
             this.lvVideo.HideSelection = false;
             this.lvVideo.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem1});
             this.lvVideo.Location = new System.Drawing.Point(639, 97);
             this.lvVideo.Name = "lvVideo";
             this.lvVideo.Size = new System.Drawing.Size(274, 382);
             this.lvVideo.TabIndex = 7;
             this.lvVideo.UseCompatibleStateImageBehavior = false;
             this.lvVideo.View = System.Windows.Forms.View.Details;
+            this.lvVideo.SelectedIndexChanged += new System.EventHandler(this.lvVideo_SelectedIndexChanged);
             this.lvVideo.DoubleClick += new System.EventHandler(this.lvVideo_DoubleClick);
             // 
             // listVideo
@@ -581,6 +860,15 @@
             this.picIconKdCm.Size = new System.Drawing.Size(107, 33);
             this.picIconKdCm.TabIndex = 3;
             this.picIconKdCm.TabStop = false;
+            // 
+            // mediaKDCm
+            // 
+            this.mediaKDCm.Enabled = true;
+            this.mediaKDCm.Location = new System.Drawing.Point(10, 106);
+            this.mediaKDCm.Name = "mediaKDCm";
+            this.mediaKDCm.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaKDCm.OcxState")));
+            this.mediaKDCm.Size = new System.Drawing.Size(613, 373);
+            this.mediaKDCm.TabIndex = 6;
             // 
             // tLTCommon
             // 
@@ -615,6 +903,16 @@
             this.tLTCommon.TabIndex = 6;
             this.tLTCommon.Text = "luyenTapCm";
             this.tLTCommon.UseVisualStyleBackColor = true;
+            // 
+            // btAdQues
+            // 
+            this.btAdQues.Location = new System.Drawing.Point(161, 8);
+            this.btAdQues.Name = "btAdQues";
+            this.btAdQues.Size = new System.Drawing.Size(118, 31);
+            this.btAdQues.TabIndex = 23;
+            this.btAdQues.Text = "Câu Hỏi Bổ Sung";
+            this.btAdQues.UseVisualStyleBackColor = true;
+            this.btAdQues.Click += new System.EventHandler(this.btAdQues_Click);
             // 
             // btLtCm10
             // 
@@ -834,302 +1132,6 @@
             this.picIcoLtCm.TabIndex = 4;
             this.picIcoLtCm.TabStop = false;
             // 
-            // audioTool
-            // 
-            this.audioTool.Enabled = true;
-            this.audioTool.Location = new System.Drawing.Point(37, 51);
-            this.audioTool.Name = "audioTool";
-            this.audioTool.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("audioTool.OcxState")));
-            this.audioTool.Size = new System.Drawing.Size(847, 52);
-            this.audioTool.TabIndex = 1;
-            // 
-            // mediaPlayer
-            // 
-            this.mediaPlayer.Enabled = true;
-            this.mediaPlayer.Location = new System.Drawing.Point(124, 143);
-            this.mediaPlayer.Name = "mediaPlayer";
-            this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
-            this.mediaPlayer.Size = new System.Drawing.Size(678, 323);
-            this.mediaPlayer.TabIndex = 1;
-            // 
-            // mediaVanDungB1
-            // 
-            this.mediaVanDungB1.Enabled = true;
-            this.mediaVanDungB1.Location = new System.Drawing.Point(439, 100);
-            this.mediaVanDungB1.Name = "mediaVanDungB1";
-            this.mediaVanDungB1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaVanDungB1.OcxState")));
-            this.mediaVanDungB1.Size = new System.Drawing.Size(460, 368);
-            this.mediaVanDungB1.TabIndex = 6;
-            // 
-            // mediaKDCm
-            // 
-            this.mediaKDCm.Enabled = true;
-            this.mediaKDCm.Location = new System.Drawing.Point(10, 106);
-            this.mediaKDCm.Name = "mediaKDCm";
-            this.mediaKDCm.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaKDCm.OcxState")));
-            this.mediaKDCm.Size = new System.Drawing.Size(613, 373);
-            this.mediaKDCm.TabIndex = 6;
-            // 
-            // btAdQues
-            // 
-            this.btAdQues.Location = new System.Drawing.Point(161, 8);
-            this.btAdQues.Name = "btAdQues";
-            this.btAdQues.Size = new System.Drawing.Size(118, 31);
-            this.btAdQues.TabIndex = 23;
-            this.btAdQues.Text = "Câu Hỏi Bổ Sung";
-            this.btAdQues.UseVisualStyleBackColor = true;
-            this.btAdQues.Click += new System.EventHandler(this.btAdQues_Click);
-            // 
-            // lbDtRs1
-            // 
-            this.lbDtRs1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDtRs1.Location = new System.Drawing.Point(7, 321);
-            this.lbDtRs1.Name = "lbDtRs1";
-            this.lbDtRs1.Size = new System.Drawing.Size(370, 34);
-            this.lbDtRs1.TabIndex = 0;
-            this.lbDtRs1.Text = "label1";
-            // 
-            // label17
-            // 
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label17.Location = new System.Drawing.Point(6, 284);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(440, 34);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Đáp Án Về Các Cảnh Đẹp Ở Đồng Nai !";
-            // 
-            // label19
-            // 
-            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label19.Location = new System.Drawing.Point(6, 42);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(440, 34);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "1. Kể Tên Một Số Cảnh Đẹp Của Quê Hương Đồng Nai";
-            // 
-            // label20
-            // 
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label20.Location = new System.Drawing.Point(477, 42);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(440, 34);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "2. Chia Sẻ Với Các Bạn Về Một Khu Du Lịch Ở Đồng Nai Mà Em Đã Được Tham Quan !";
-            // 
-            // label18
-            // 
-            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label18.Location = new System.Drawing.Point(477, 284);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(440, 34);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Đáp Án Về Khu Du Lịch Em Biết !";
-            // 
-            // lbDtRs2
-            // 
-            this.lbDtRs2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDtRs2.Location = new System.Drawing.Point(7, 360);
-            this.lbDtRs2.Name = "lbDtRs2";
-            this.lbDtRs2.Size = new System.Drawing.Size(370, 34);
-            this.lbDtRs2.TabIndex = 0;
-            this.lbDtRs2.Text = "label1";
-            // 
-            // lbDlRs1
-            // 
-            this.lbDlRs1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDlRs1.Location = new System.Drawing.Point(477, 321);
-            this.lbDlRs1.Name = "lbDlRs1";
-            this.lbDlRs1.Size = new System.Drawing.Size(371, 34);
-            this.lbDlRs1.TabIndex = 0;
-            this.lbDlRs1.Text = "label1";
-            // 
-            // lbDtRs3
-            // 
-            this.lbDtRs3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDtRs3.Location = new System.Drawing.Point(7, 399);
-            this.lbDtRs3.Name = "lbDtRs3";
-            this.lbDtRs3.Size = new System.Drawing.Size(370, 34);
-            this.lbDtRs3.TabIndex = 0;
-            this.lbDtRs3.Text = "label1";
-            // 
-            // lbDlRs2
-            // 
-            this.lbDlRs2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDlRs2.Location = new System.Drawing.Point(477, 360);
-            this.lbDlRs2.Name = "lbDlRs2";
-            this.lbDlRs2.Size = new System.Drawing.Size(371, 34);
-            this.lbDlRs2.TabIndex = 0;
-            this.lbDlRs2.Text = "label1";
-            // 
-            // lbDtRs4
-            // 
-            this.lbDtRs4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDtRs4.Location = new System.Drawing.Point(7, 438);
-            this.lbDtRs4.Name = "lbDtRs4";
-            this.lbDtRs4.Size = new System.Drawing.Size(371, 34);
-            this.lbDtRs4.TabIndex = 0;
-            this.lbDtRs4.Text = "label1";
-            // 
-            // lbDlRs3
-            // 
-            this.lbDlRs3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDlRs3.Location = new System.Drawing.Point(477, 399);
-            this.lbDlRs3.Name = "lbDlRs3";
-            this.lbDlRs3.Size = new System.Drawing.Size(371, 34);
-            this.lbDlRs3.TabIndex = 0;
-            this.lbDlRs3.Text = "label1";
-            // 
-            // lbDlRs4
-            // 
-            this.lbDlRs4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbDlRs4.Location = new System.Drawing.Point(477, 438);
-            this.lbDlRs4.Name = "lbDlRs4";
-            this.lbDlRs4.Size = new System.Drawing.Size(371, 34);
-            this.lbDlRs4.TabIndex = 0;
-            this.lbDlRs4.Text = "label1";
-            // 
-            // btDtDa1
-            // 
-            this.btDtDa1.Location = new System.Drawing.Point(383, 321);
-            this.btDtDa1.Name = "btDtDa1";
-            this.btDtDa1.Size = new System.Drawing.Size(63, 34);
-            this.btDtDa1.TabIndex = 0;
-            this.btDtDa1.Text = "Đáp Án";
-            this.btDtDa1.UseVisualStyleBackColor = true;
-            this.btDtDa1.Click += new System.EventHandler(this.btDtDa1_Click);
-            // 
-            // btDlDa1
-            // 
-            this.btDlDa1.Location = new System.Drawing.Point(854, 321);
-            this.btDlDa1.Name = "btDlDa1";
-            this.btDlDa1.Size = new System.Drawing.Size(63, 34);
-            this.btDlDa1.TabIndex = 0;
-            this.btDlDa1.Text = "Đáp Án";
-            this.btDlDa1.UseVisualStyleBackColor = true;
-            this.btDlDa1.Click += new System.EventHandler(this.btDlDa1_Click);
-            // 
-            // btDlDa2
-            // 
-            this.btDlDa2.Location = new System.Drawing.Point(854, 359);
-            this.btDlDa2.Name = "btDlDa2";
-            this.btDlDa2.Size = new System.Drawing.Size(63, 34);
-            this.btDlDa2.TabIndex = 0;
-            this.btDlDa2.Text = "Đáp Án";
-            this.btDlDa2.UseVisualStyleBackColor = true;
-            this.btDlDa2.Click += new System.EventHandler(this.btDlDa2_Click);
-            // 
-            // btDlDa3
-            // 
-            this.btDlDa3.Location = new System.Drawing.Point(854, 397);
-            this.btDlDa3.Name = "btDlDa3";
-            this.btDlDa3.Size = new System.Drawing.Size(63, 34);
-            this.btDlDa3.TabIndex = 0;
-            this.btDlDa3.Text = "Đáp Án";
-            this.btDlDa3.UseVisualStyleBackColor = true;
-            this.btDlDa3.Click += new System.EventHandler(this.btDlDa3_Click);
-            // 
-            // btDlDa4
-            // 
-            this.btDlDa4.Location = new System.Drawing.Point(854, 435);
-            this.btDlDa4.Name = "btDlDa4";
-            this.btDlDa4.Size = new System.Drawing.Size(63, 34);
-            this.btDlDa4.TabIndex = 0;
-            this.btDlDa4.Text = "Đáp Án";
-            this.btDlDa4.UseVisualStyleBackColor = true;
-            this.btDlDa4.Click += new System.EventHandler(this.btDlDa4_Click);
-            // 
-            // btDtDa2
-            // 
-            this.btDtDa2.Location = new System.Drawing.Point(383, 360);
-            this.btDtDa2.Name = "btDtDa2";
-            this.btDtDa2.Size = new System.Drawing.Size(63, 34);
-            this.btDtDa2.TabIndex = 0;
-            this.btDtDa2.Text = "Đáp Án";
-            this.btDtDa2.UseVisualStyleBackColor = true;
-            this.btDtDa2.Click += new System.EventHandler(this.btDtDa2_Click);
-            // 
-            // btDtDa3
-            // 
-            this.btDtDa3.Location = new System.Drawing.Point(383, 396);
-            this.btDtDa3.Name = "btDtDa3";
-            this.btDtDa3.Size = new System.Drawing.Size(63, 34);
-            this.btDtDa3.TabIndex = 0;
-            this.btDtDa3.Text = "Đáp Án";
-            this.btDtDa3.UseVisualStyleBackColor = true;
-            this.btDtDa3.Click += new System.EventHandler(this.btDtDa3_Click);
-            // 
-            // btDtDa4
-            // 
-            this.btDtDa4.Location = new System.Drawing.Point(383, 438);
-            this.btDtDa4.Name = "btDtDa4";
-            this.btDtDa4.Size = new System.Drawing.Size(63, 34);
-            this.btDtDa4.TabIndex = 0;
-            this.btDtDa4.Text = "Đáp Án";
-            this.btDtDa4.UseVisualStyleBackColor = true;
-            this.btDtDa4.Click += new System.EventHandler(this.btDtDa4_Click);
-            // 
-            // picIconLt
-            // 
-            this.picIconLt.Location = new System.Drawing.Point(10, 6);
-            this.picIconLt.Name = "picIconLt";
-            this.picIconLt.Size = new System.Drawing.Size(107, 33);
-            this.picIconLt.TabIndex = 2;
-            this.picIconLt.TabStop = false;
-            // 
-            // picQuestDt
-            // 
-            this.picQuestDt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picQuestDt.Location = new System.Drawing.Point(6, 72);
-            this.picQuestDt.Name = "picQuestDt";
-            this.picQuestDt.Size = new System.Drawing.Size(440, 209);
-            this.picQuestDt.TabIndex = 3;
-            this.picQuestDt.TabStop = false;
-            this.picQuestDt.Click += new System.EventHandler(this.picQuestDt_Click);
-            this.picQuestDt.DoubleClick += new System.EventHandler(this.picQuestDt_DoubleClick);
-            // 
-            // picQuestDl
-            // 
-            this.picQuestDl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picQuestDl.Location = new System.Drawing.Point(477, 72);
-            this.picQuestDl.Name = "picQuestDl";
-            this.picQuestDl.Size = new System.Drawing.Size(440, 209);
-            this.picQuestDl.TabIndex = 3;
-            this.picQuestDl.TabStop = false;
-            this.picQuestDl.DoubleClick += new System.EventHandler(this.picQuestDl_DoubleClick);
-            // 
-            // tLuyenTap
-            // 
-            this.tLuyenTap.Controls.Add(this.picQuestDl);
-            this.tLuyenTap.Controls.Add(this.picQuestDt);
-            this.tLuyenTap.Controls.Add(this.picIconLt);
-            this.tLuyenTap.Controls.Add(this.btDtDa4);
-            this.tLuyenTap.Controls.Add(this.btDtDa3);
-            this.tLuyenTap.Controls.Add(this.btDtDa2);
-            this.tLuyenTap.Controls.Add(this.btDlDa4);
-            this.tLuyenTap.Controls.Add(this.btDlDa3);
-            this.tLuyenTap.Controls.Add(this.btDlDa2);
-            this.tLuyenTap.Controls.Add(this.btDlDa1);
-            this.tLuyenTap.Controls.Add(this.btDtDa1);
-            this.tLuyenTap.Controls.Add(this.lbDlRs4);
-            this.tLuyenTap.Controls.Add(this.lbDlRs3);
-            this.tLuyenTap.Controls.Add(this.lbDtRs4);
-            this.tLuyenTap.Controls.Add(this.lbDlRs2);
-            this.tLuyenTap.Controls.Add(this.lbDtRs3);
-            this.tLuyenTap.Controls.Add(this.lbDlRs1);
-            this.tLuyenTap.Controls.Add(this.lbDtRs2);
-            this.tLuyenTap.Controls.Add(this.label18);
-            this.tLuyenTap.Controls.Add(this.label20);
-            this.tLuyenTap.Controls.Add(this.label19);
-            this.tLuyenTap.Controls.Add(this.label17);
-            this.tLuyenTap.Controls.Add(this.lbDtRs1);
-            this.tLuyenTap.Location = new System.Drawing.Point(4, 22);
-            this.tLuyenTap.Name = "tLuyenTap";
-            this.tLuyenTap.Padding = new System.Windows.Forms.Padding(3);
-            this.tLuyenTap.Size = new System.Drawing.Size(923, 487);
-            this.tLuyenTap.TabIndex = 2;
-            this.tLuyenTap.Text = "LuyenTap";
-            this.tLuyenTap.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1151,6 +1153,8 @@
             this.notBook.ResumeLayout(false);
             this.tKhoiDong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIconKd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.audioTool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).EndInit();
             this.tKhamPha.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIconKp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDanhThang3)).EndInit();
@@ -1160,23 +1164,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.picDulich2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDulich1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDanhThang1)).EndInit();
+            this.tLuyenTap.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picQuestDl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuestDt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIconLt)).EndInit();
             this.tVanDung.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mediaVanDungB1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVanDungB1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconVd)).EndInit();
             this.tKdCommon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIconKdCm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaKDCm)).EndInit();
             this.tLTCommon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picQ2LtCm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picQ1LtCm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIcoLtCm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.audioTool)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaVanDungB1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaKDCm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picIconLt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuestDt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuestDl)).EndInit();
-            this.tLuyenTap.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -53,6 +53,7 @@
             this.lvAddQues.TabIndex = 0;
             this.lvAddQues.UseCompatibleStateImageBehavior = false;
             this.lvAddQues.View = System.Windows.Forms.View.Details;
+            this.lvAddQues.DoubleClick += new System.EventHandler(this.lvAddQues_DoubleClick);
             // 
             // addQuestion
             // 
@@ -69,6 +70,7 @@
             // 
             // picAdQues
             // 
+            this.picAdQues.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picAdQues.Location = new System.Drawing.Point(359, 57);
             this.picAdQues.Name = "picAdQues";
             this.picAdQues.Size = new System.Drawing.Size(583, 289);

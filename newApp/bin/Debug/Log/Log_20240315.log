@@ -1,0 +1,5 @@
+[3/15/2024 4:27:19 PM] System.IO.FileNotFoundException: D:\02.Study\00.VBA\01_Project\14_trangtrang\tool GDDP\newApp\newApp\newApp\bin\Debug\\img\nhcq3.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.addQues.addImg(String imgName) in D:\02.Study\00.VBA\01_Project\14_trangtrang\tool GDDP\newApp\newApp\newApp\addQues.cs:line 73
+   at newApp.addQues.lvAddQues_DoubleClick(Object sender, EventArgs e) in D:\02.Study\00.VBA\01_Project\14_trangtrang\tool GDDP\newApp\newApp\newApp\addQues.cs:line 59

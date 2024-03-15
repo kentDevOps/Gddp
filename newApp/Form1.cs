@@ -865,19 +865,34 @@ namespace newApp
         {
             if (lbcap.Text== "Nguyễn Hữu Cảnh")
             {
+                List<string> cauHoi = new List<string> {"Tại sao lại có đền thờ Nguyễn Hữu Cảnh ?",
+                    "Hiện tại đền thờ Nguyễn Hữu Cảnh tọa lạc ở địa phương nào?", 
+                    "Tại sao lại có những con đường, ngôi trường mang tên Nguyễn Hữu Cảnh?" };
 
+                loadAdQuesCommon(cauHoi);
             }
         }
-        public void loadAdQuesCommon(List<string> listQues,List<string> listImg)
+        public void loadAdQuesCommon(List<string> listQues)
         {
             addQues newF = new addQues();
-            foreach(string item in listQues)
+            newF.Show();
+            foreach (string item in listQues)
             {
                 newF.addQuestionList.Items.Add(item);
             }
         }
 
         private void picDulich3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvVideo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void notBook_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
