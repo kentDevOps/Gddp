@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "newApp", "newApp\newApp.csproj", "{1F7FB7D6-04CA-4D3C-BBCF-35903CEB7112}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GddpSetup1", "GddpSetup1\GddpSetup1.vdproj", "{E700B2A7-ECCF-4B7B-AD58-7697EEB146D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F7FB7D6-04CA-4D3C-BBCF-35903CEB7112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7FB7D6-04CA-4D3C-BBCF-35903CEB7112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7FB7D6-04CA-4D3C-BBCF-35903CEB7112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7FB7D6-04CA-4D3C-BBCF-35903CEB7112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E700B2A7-ECCF-4B7B-AD58-7697EEB146D2}.Debug|Any CPU.ActiveCfg = Debug
+		{E700B2A7-ECCF-4B7B-AD58-7697EEB146D2}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD7C9B5E-9B3E-4ABB-B0FB-9D5679E4DA3F}
+	EndGlobalSection
+EndGlobal
