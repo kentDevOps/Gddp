@@ -76,6 +76,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addQues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addQues.Designer.cs">
+      <DependentUpon>addQues.cs</DependentUpon>
+    </Compile>
     <Compile Include="common.cs" />
     <Compile Include="ErrorLog.cs" />
     <Compile Include="Form1.cs">
@@ -99,6 +105,9 @@
     <Compile Include="showImage.Designer.cs">
       <DependentUpon>showImage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addQues.resx">
+      <DependentUpon>addQues.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

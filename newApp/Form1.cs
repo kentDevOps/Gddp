@@ -494,9 +494,9 @@ namespace newApp
         {
             try
             {
-                lbDtRs5.Text = "Thác Mai - Bàu nước sôi, huyện Định Quán";
+                /*lbDtRs5.Text = "Thác Mai - Bàu nước sôi, huyện Định Quán";
                 string dtQuestImg = iniConfig.RelativeToFullPath(@"...") + @"\aud\thacMaiRs.mp3";
-                common.phatAudio(dtQuestImg);
+                common.phatAudio(dtQuestImg);*/
             }
             catch (Exception ex)
             {
@@ -510,9 +510,9 @@ namespace newApp
         {
             try
             {
-                lbDtRs6.Text = "Đảo Ó - Đồng Trường, huyện Vĩnh Cửu";
+                /*lbDtRs6.Text = "Đảo Ó - Đồng Trường, huyện Vĩnh Cửu";
                 string dtQuestImg = iniConfig.RelativeToFullPath(@"...") + @"\aud\daoORs.mp3";
-                common.phatAudio(dtQuestImg);
+                common.phatAudio(dtQuestImg);*/
             }
             catch (Exception ex)
             {
@@ -586,9 +586,9 @@ namespace newApp
         {
             try
             {
-                lbDlRs5.Text = "Làng du lịch Tre Việt , Huyện Nhơn Trạch";
+                /*lbDlRs5.Text = "Làng du lịch Tre Việt , Huyện Nhơn Trạch";
                 string dtQuestImg = iniConfig.RelativeToFullPath(@"...") + @"\aud\treRs.mp3";
-                common.phatAudio(dtQuestImg);
+                common.phatAudio(dtQuestImg);*/
             }
             catch (Exception ex)
             {
@@ -601,9 +601,9 @@ namespace newApp
         {
             try
             {
-                lbDlRs6.Text = "Khu du lịch Vườn Xoài , Thành Phố Biên Hòa";
+                /*lbDlRs6.Text = "Khu du lịch Vườn Xoài , Thành Phố Biên Hòa";
                 string dtQuestImg = iniConfig.RelativeToFullPath(@"...") + @"\aud\xoaiRs.mp3";
-                common.phatAudio(dtQuestImg);
+                common.phatAudio(dtQuestImg);*/
             }
             catch (Exception ex)
             {
@@ -797,55 +797,87 @@ namespace newApp
 
         private void btLtCm2_Click(object sender, EventArgs e)
         {
-
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem2");
+            lbLtACm2.Text = strfeature;
         }
 
         private void btLtCm3_Click(object sender, EventArgs e)
         {
-
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem3");
+            lbLtACm3.Text = strfeature;
         }
 
         private void btLtCm4_Click(object sender, EventArgs e)
         {
-
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem4");
+            lbLtACm4.Text = strfeature;
         }
 
         private void btLtCm5_Click(object sender, EventArgs e)
         {
-
+            /*strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem5");
+            lbLtACm5.Text = strfeature;*/
         }
 
         private void btLtCm6_Click(object sender, EventArgs e)
         {
-
+            /*strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem6");
+            lbLtACm6.Text = strfeature;*/
         }
 
         private void btLtCm7_Click(object sender, EventArgs e)
         {
-
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            lbLtACm7.Text = strfeature;
         }
 
         private void btLtCm8_Click(object sender, EventArgs e)
         {
-
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            lbLtACm8.Text = strfeature;
         }
 
         private void btLtCm9_Click(object sender, EventArgs e)
         {
-
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            lbLtACm10.Text = strfeature;
         }
 
         private void btLtCm10_Click(object sender, EventArgs e)
         {
-
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            lbLtACm11.Text = strfeature;
         }
 
         private void btLtCm11_Click(object sender, EventArgs e)
         {
-
+            /*strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            lbLtACm12.Text = strfeature;*/
         }
 
         private void btLtCm12_Click(object sender, EventArgs e)
+        {
+            /*strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            lbLtACm13.Text = strfeature;*/
+        }
+
+        private void btAdQues_Click(object sender, EventArgs e)
+        {
+            if (lbcap.Text== "Nguyễn Hữu Cảnh")
+            {
+
+            }
+        }
+        public void loadAdQuesCommon(List<string> listQues,List<string> listImg)
+        {
+            addQues newF = new addQues();
+            foreach(string item in listQues)
+            {
+                newF.addQuestionList.Items.Add(item);
+            }
+        }
+
+        private void picDulich3_Click(object sender, EventArgs e)
         {
 
         }

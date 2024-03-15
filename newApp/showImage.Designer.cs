@@ -38,7 +38,7 @@
             // 
             this.picChiTiet.Location = new System.Drawing.Point(260, 31);
             this.picChiTiet.Name = "picChiTiet";
-            this.picChiTiet.Size = new System.Drawing.Size(1046, 691);
+            this.picChiTiet.Size = new System.Drawing.Size(983, 618);
             this.picChiTiet.TabIndex = 0;
             this.picChiTiet.TabStop = false;
             // 
@@ -49,7 +49,7 @@
             this.lvChiTiet.HideSelection = false;
             this.lvChiTiet.Location = new System.Drawing.Point(22, 31);
             this.lvChiTiet.Name = "lvChiTiet";
-            this.lvChiTiet.Size = new System.Drawing.Size(232, 690);
+            this.lvChiTiet.Size = new System.Drawing.Size(232, 618);
             this.lvChiTiet.TabIndex = 1;
             this.lvChiTiet.UseCompatibleStateImageBehavior = false;
             this.lvChiTiet.View = System.Windows.Forms.View.Details;
@@ -63,7 +63,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1330, 742);
+            this.ClientSize = new System.Drawing.Size(1264, 661);
             this.Controls.Add(this.lvChiTiet);
             this.Controls.Add(this.picChiTiet);
             this.Name = "showImage";

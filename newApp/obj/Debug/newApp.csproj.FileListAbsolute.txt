@@ -75,3 +75,4 @@ D:\02.Study\00.VBA\01_Project\14_trangtrang\tool GDDP\newApp\newApp\newApp\obj\D
 D:\02.Study\00.VBA\01_Project\14_trangtrang\tool GDDP\newApp\newApp\newApp\obj\Debug\newApp.exe
 D:\02.Study\00.VBA\01_Project\14_trangtrang\tool GDDP\newApp\newApp\newApp\obj\Debug\newApp.pdb
 D:\02.Study\00.VBA\01_Project\14_trangtrang\tool GDDP\newApp\newApp\newApp\obj\Debug\newApp.showImage.resources
+D:\02.Study\00.VBA\01_Project\14_trangtrang\tool GDDP\newApp\newApp\newApp\obj\Debug\newApp.addQues.resources
