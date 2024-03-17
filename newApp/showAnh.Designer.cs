@@ -45,27 +45,36 @@
             // 
             // btShow
             // 
+            this.btShow.BackColor = System.Drawing.Color.IndianRed;
+            this.btShow.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btShow.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btShow.Location = new System.Drawing.Point(-1, -1);
             this.btShow.Name = "btShow";
             this.btShow.Size = new System.Drawing.Size(177, 55);
             this.btShow.TabIndex = 1;
             this.btShow.Text = "Kết Quả";
-            this.btShow.UseVisualStyleBackColor = true;
+            this.btShow.UseVisualStyleBackColor = false;
             this.btShow.Click += new System.EventHandler(this.btShow_Click);
             // 
             // lbTieuDe
             // 
+            this.lbTieuDe.AutoSize = true;
+            this.lbTieuDe.BackColor = System.Drawing.Color.IndianRed;
+            this.lbTieuDe.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTieuDe.ForeColor = System.Drawing.Color.White;
             this.lbTieuDe.Location = new System.Drawing.Point(202, 9);
             this.lbTieuDe.Name = "lbTieuDe";
-            this.lbTieuDe.Size = new System.Drawing.Size(127, 35);
+            this.lbTieuDe.Size = new System.Drawing.Size(0, 21);
             this.lbTieuDe.TabIndex = 2;
-            this.lbTieuDe.Text = "label1";
             // 
             // lbDes
             // 
-            this.lbDes.Location = new System.Drawing.Point(437, 9);
+            this.lbDes.BackColor = System.Drawing.Color.IndianRed;
+            this.lbDes.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbDes.Location = new System.Drawing.Point(235, 9);
             this.lbDes.Name = "lbDes";
-            this.lbDes.Size = new System.Drawing.Size(127, 35);
+            this.lbDes.Size = new System.Drawing.Size(597, 35);
             this.lbDes.TabIndex = 2;
             // 
             // showAnh
@@ -82,6 +91,7 @@
             this.Text = "showAnh";
             ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

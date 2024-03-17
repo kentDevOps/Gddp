@@ -1,0 +1,7 @@
+[3/17/2024 11:36:08 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai2'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\02_VBA\08_TrangTrang\00_gddp\Gddp\newApp\Form1.cs:line 91
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\02_VBA\08_TrangTrang\00_gddp\Gddp\newApp\Form1.cs:line 48
