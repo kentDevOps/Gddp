@@ -1028,5 +1028,10 @@ namespace newApp
             lbVanDungCmAns3.Text = "";
             lbVanDungCmAns4.Text = "";
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
