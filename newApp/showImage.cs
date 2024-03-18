@@ -26,5 +26,10 @@ namespace newApp
             get { return lvChiTiet; }
             set { lvChiTiet = value; }
         }
+
+        private void lvChiTiet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

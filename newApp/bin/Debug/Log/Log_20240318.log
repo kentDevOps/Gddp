@@ -1,0 +1,50 @@
+[3/18/2024 4:22:50 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\congLao.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 947
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 925
+[3/18/2024 4:22:54 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\nvLs.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 947
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 932
+[3/18/2024 4:23:02 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\congLao.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 947
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 925
+[3/18/2024 4:24:36 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\nvLs.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 947
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 932
+[3/18/2024 4:24:45 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\nvLs.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 947
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 932
+[3/18/2024 4:26:18 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\nvLs.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 949
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 934
+[3/18/2024 4:37:21 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\nvLs.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 951
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 936
+[3/18/2024 5:00:19 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\nvLs.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 952
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 937
+[3/18/2024 5:03:01 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\nvLs.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 952
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 937
+[3/18/2024 5:03:06 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\bin\Debug\img\nhc\nvLs.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 952
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\Gddp\newApp\Form1.cs:line 937

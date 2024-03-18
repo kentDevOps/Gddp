@@ -53,6 +53,7 @@
             this.lvChiTiet.TabIndex = 1;
             this.lvChiTiet.UseCompatibleStateImageBehavior = false;
             this.lvChiTiet.View = System.Windows.Forms.View.Details;
+            this.lvChiTiet.SelectedIndexChanged += new System.EventHandler(this.lvChiTiet_SelectedIndexChanged);
             // 
             // listImg
             // 

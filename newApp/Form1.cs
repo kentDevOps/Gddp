@@ -633,10 +633,16 @@ namespace newApp
                     string dtQuestImg = iniConfig.RelativeToFullPath(@"...") + @"\img\vanDungB1.jpg";
                     picVanDungB1.Image = Image.FromFile(dtQuestImg);
                     picVanDungB1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    
                 }
                 else if (lbcap.Text == "Nguyễn Hữu Cảnh")
                 {
-                    //notBook.SelectedTab = tKhoiDong;
+                    
+                    notBook.SelectedTab = tVanDungCm;
+                    picIconVDcm.Image = Image.FromFile(kdIconPath);
+                    picIconVDcm.SizeMode = PictureBoxSizeMode.StretchImage;
+                    //Load Question
+                    loadQuesVanDung();
                 }
                 else
                 {
@@ -647,6 +653,17 @@ namespace newApp
             {
                 ErrorLog.LogExport(ex.ToString());
                 MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void loadQuesVanDung()
+        {
+           // lvVanDungQuesCm.Clear();
+            if (lbcap.Text == "Nguyễn Hữu Cảnh")
+            {
+                lvVanDungQuesCm.Items.Clear();
+                lvVanDungQuesCm.Items.Add(new ListViewItem("Để ghi nhớ công lao của Nguyễn Hữu Cảnh, học sinh chúng ta nên làm gì?"));
+                lvVanDungQuesCm.Items.Add(new ListViewItem("Hãy chia sẻ với các bạn về một nhân vật lịch sử – văn hoá ở địa phương em đang sinh sống."));
             }
         }
 
@@ -827,25 +844,25 @@ namespace newApp
 
         private void btLtCm7_Click(object sender, EventArgs e)
         {
-            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhNhoOn1");
             lbLtACm7.Text = strfeature;
         }
 
         private void btLtCm8_Click(object sender, EventArgs e)
         {
-            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhNhoOn2");
             lbLtACm8.Text = strfeature;
         }
 
         private void btLtCm9_Click(object sender, EventArgs e)
         {
-            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhNhoOn3");
             lbLtACm10.Text = strfeature;
         }
 
         private void btLtCm10_Click(object sender, EventArgs e)
         {
-            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDacDiem1");
+            strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhNhoOn4");
             lbLtACm11.Text = strfeature;
         }
 
@@ -895,6 +912,121 @@ namespace newApp
         private void notBook_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void lvVanDungQuesCm_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                for (int i = 0; i < lvVanDungQuesCm.SelectedItems.Count; i++)
+                {
+                    //clearAnswer();
+                    clearVanDungcm();
+                    string sltItem = lvVanDungQuesCm.SelectedItems[i].Text;
+                    //string VideoName = strVideoPath + @"\" + lvVideo.SelectedItems[i].Text + ".mp4";
+                    if (sltItem == "Để ghi nhớ công lao của Nguyễn Hữu Cảnh, học sinh chúng ta nên làm gì?")
+                    {
+                        lbVanDungCmHead.Text = sltItem;
+                        addImgVanDungCm("congLao.jpg");
+                        lbVanDungAnsCm.Text = "Đáp Án Cho Câu Hỏi : ";
+
+                    }
+                    else if (sltItem == "Hãy chia sẻ với các bạn về một nhân vật lịch sử – văn hoá ở địa phương em đang sinh sống.")
+                    {
+                        lbVanDungCmHead.Text = sltItem;
+                        addImgVanDungCm("nvLs.jpg");
+                        lbVanDungAnsCm.Text = "Đáp Án Cho Câu Hỏi : " ;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void addImgVanDungCm(string StrNameImg)
+        {
+            string strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\nhc\" + StrNameImg;
+            picVanDungCm.Image = Image.FromFile(strVideoPath);
+            picVanDungCm.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void btVanDungCmA1_Click(object sender, EventArgs e)
+        {
+            if (lbcap.Text == "Nguyễn Hữu Cảnh")
+            {
+                if (lbVanDungCmHead.Text == "Để ghi nhớ công lao của Nguyễn Hữu Cảnh, học sinh chúng ta nên làm gì?")
+                {
+                    strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhCongLao1");
+                    lbVanDungCmAns1.Text = strfeature;
+                }
+                else if (lbVanDungCmHead.Text == "Hãy chia sẻ với các bạn về một nhân vật lịch sử – văn hoá ở địa phương em đang sinh sống.")
+                {
+                    strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDanhNhan1");
+                    lbVanDungCmAns1.Text = strfeature;
+                }
+            }
+        }
+
+        private void btVanDungCmA2_Click(object sender, EventArgs e)
+        {
+            if (lbcap.Text == "Nguyễn Hữu Cảnh")
+            {
+                if (lbVanDungCmHead.Text == "Để ghi nhớ công lao của Nguyễn Hữu Cảnh, học sinh chúng ta nên làm gì?")
+                {
+                    strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhCongLao2");
+                    lbVanDungCmAns2.Text = strfeature;
+                }
+                else if (lbVanDungCmHead.Text == "Hãy chia sẻ với các bạn về một nhân vật lịch sử – văn hoá ở địa phương em đang sinh sống.")
+                {
+                    strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDanhNhan2");
+                    lbVanDungCmAns2.Text = strfeature;
+                }
+            }
+        }
+
+        private void btVanDungCmA3_Click(object sender, EventArgs e)
+        {
+            if (lbcap.Text == "Nguyễn Hữu Cảnh")
+            {
+                if (lbVanDungCmHead.Text == "Để ghi nhớ công lao của Nguyễn Hữu Cảnh, học sinh chúng ta nên làm gì?")
+                {
+                    strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhCongLao3");
+                    lbVanDungCmAns3.Text= strfeature;
+                }
+                else if (lbVanDungCmHead.Text == "Hãy chia sẻ với các bạn về một nhân vật lịch sử – văn hoá ở địa phương em đang sinh sống.")
+                {
+                    strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDanhNhan3");
+                    lbVanDungCmAns3.Text = strfeature;
+                }
+            }
+        }
+
+        private void btVanDungCmA4_Click(object sender, EventArgs e)
+        {
+            if (lbcap.Text == "Nguyễn Hữu Cảnh")
+            {
+                if (lbVanDungCmHead.Text == "Để ghi nhớ công lao của Nguyễn Hữu Cảnh, học sinh chúng ta nên làm gì?")
+                {
+                    strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhCongLao4");
+                    lbVanDungCmAns4.Text = strfeature;
+                }
+                else if (lbVanDungCmHead.Text == "Hãy chia sẻ với các bạn về một nhân vật lịch sử – văn hoá ở địa phương em đang sinh sống.")
+                {
+                    strfeature = iniConfig.readIni(iniPathC, "bai2", "nguyenHuuCanhDanhNhan4");
+                    lbVanDungCmAns4.Text = strfeature;
+                }
+            }
+        }
+        public void clearVanDungcm()
+        {
+            lbVanDungCmAns1.Text = "";
+            lbVanDungCmAns2.Text = "";
+            lbVanDungCmAns3.Text = "";
+            lbVanDungCmAns4.Text = "";
         }
     }
 }

@@ -31,13 +31,14 @@ namespace newApp
             get { return lbAdQuesHead; }
             set { lbAdQuesHead = value; }
         }
-
+        string iniPath = iniConfig.RelativeToFullPath(@"...") + @"config.ini";
         private void lvAddQues_DoubleClick(object sender, EventArgs e)
         {
             try
             {
                 for (int i = 0; i < lvAddQues.SelectedItems.Count; i++)
                 {
+                    clearAnswer();
                     string sltItem = lvAddQues.SelectedItems[i].Text;
                     //string VideoName = strVideoPath + @"\" + lvVideo.SelectedItems[i].Text + ".mp4";
                     if (sltItem == "Tại sao lại có đền thờ Nguyễn Hữu Cảnh ?")
@@ -72,6 +73,70 @@ namespace newApp
             string kdIconPath = iniConfig.RelativeToFullPath(@"...") + @"\img\nhc\" + imgName;
             picAdQues.Image = Image.FromFile(kdIconPath);
             picAdQues.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void btAdQ1_Click(object sender, EventArgs e)
+        {
+            if (lbAddQuesDetail.Text == "Tại sao lại có đền thờ Nguyễn Hữu Cảnh ?")
+            {
+                lbAdQuesA1.Text = iniConfig.readIni(iniPath, "bai2", "nguyenHuuCanhDenTho1");
+            }
+            else if (lbAddQuesDetail.Text == "Hiện tại đền thờ Nguyễn Hữu Cảnh tọa lạc ở địa phương nào?")
+            {
+                lbAdQuesA1.Text = iniConfig.readIni(iniPath, "bai2", "nguyenHuuCanhToaLac1");
+            }
+            else if (lbAddQuesDetail.Text == "Tại sao lại có những con đường, ngôi trường mang tên Nguyễn Hữu Cảnh?")
+            {
+                lbAdQuesA1.Text = iniConfig.readIni(iniPath, "bai2", "nguyenHuuCanhConDuong1");
+            }
+        }
+
+        private void btAdQ2_Click(object sender, EventArgs e)
+        {
+            if (lbAddQuesDetail.Text == "Tại sao lại có đền thờ Nguyễn Hữu Cảnh ?")
+            {
+                lbAdQuesA2.Text = iniConfig.readIni(iniPath, "bai2", "nguyenHuuCanhDenTho2");
+            }
+            else if (lbAddQuesDetail.Text == "Hiện tại đền thờ Nguyễn Hữu Cảnh tọa lạc ở địa phương nào?")
+            {
+                lbAdQuesA2.Text = iniConfig.readIni(iniPath, "bai2", "nguyenHuuCanhToaLac2");
+            }
+            else if (lbAddQuesDetail.Text == "Tại sao lại có những con đường, ngôi trường mang tên Nguyễn Hữu Cảnh?")
+            {
+                lbAdQuesA2.Text = iniConfig.readIni(iniPath, "bai2", "nguyenHuuCanhConDuong2");
+            }
+        }
+
+        private void btAdQ3_Click(object sender, EventArgs e)
+        {
+            if (lbAddQuesDetail.Text == "Tại sao lại có đền thờ Nguyễn Hữu Cảnh ?")
+            {
+                lbAdQuesA3.Text = iniConfig.readIni(iniPath, "bai2", "nguyenHuuCanhDenTho3");
+            }
+            else if (lbAddQuesDetail.Text == "Hiện tại đền thờ Nguyễn Hữu Cảnh tọa lạc ở địa phương nào?")
+            {
+                lbAdQuesA3.Text = iniConfig.readIni(iniPath, "bai2", "nguyenHuuCanhToaLac3");
+            }
+            else if (lbAddQuesDetail.Text == "Tại sao lại có những con đường, ngôi trường mang tên Nguyễn Hữu Cảnh?")
+            {
+                lbAdQuesA3.Text = iniConfig.readIni(iniPath, "bai2", "nguyenHuuCanhConDuong3");
+            }
+        }
+
+        private void lvAddQues_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        public void clearAnswer()
+        {
+            lbAdQuesA1.Text = "";
+            lbAdQuesA2.Text = "";
+            lbAdQuesA3.Text = "";
+        }
+
+        private void addQues_Load(object sender, EventArgs e)
+        {
+            clearAnswer();
         }
     }
 }
