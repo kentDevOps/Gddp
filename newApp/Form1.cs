@@ -147,6 +147,7 @@ namespace newApp
         {
             try
             {
+                clearVdCmAns();
                 if (lbcap.Text == "Đồng Nai Quê Hương Tươi Đẹp")
                 {
                     notBook.SelectedTab = tKhamPha;
@@ -185,6 +186,7 @@ namespace newApp
                 {
                     notBook.SelectedTab = tKhamPhaCm;
                     //load data vao combobox
+                    cbKpCm.Items.Clear();
                     cbKpCm.Items.Add("Hoạt Động 1");
                     cbKpCm.Items.Add("Hoạt Động 2");
                     // load icon
@@ -727,20 +729,30 @@ namespace newApp
 
         private void lvVideo_DoubleClick(object sender, EventArgs e)
         {
-            string strVideoPath = ""; ;
-            if (lbcap.Text == "Nguyễn Hữu Cảnh")
+            try
             {
-                strVideoPath = iniConfig.readIni(iniPathC, "bai2", "videoKhoiDongPath");
-            }else if (lbcap.Text == "Nghề Gốm Mĩ Nghệ Biên Hoà")
-            {
-                strVideoPath = iniConfig.readIni(iniPathC, "bai3", "videoKhoiDongPath");
+                string strVideoPath = ""; ;
+                if (lbcap.Text == "Nguyễn Hữu Cảnh")
+                {
+                    strVideoPath = iniConfig.readIni(iniPathC, "bai2", "videoKhoiDongPath");
+                }
+                else if (lbcap.Text == "Nghề Gốm Mĩ Nghệ Biên Hoà")
+                {
+                    strVideoPath = iniConfig.readIni(iniPathC, "bai3", "videoKhoiDongPath");
+                }
+
+                for (int i = 0; i <= lvVideo.SelectedItems.Count - 1; i++)
+                {
+                    string VideoName = strVideoPath + @"\" + lvVideo.SelectedItems[i].Text + ".mp4";
+                    mediaKDCm.URL = VideoName;
+                }
             }
-            
-            for (int i = 0; i <= lvVideo.SelectedItems.Count - 1; i++)
+            catch(Exception ex)
             {
-                string VideoName = strVideoPath + @"\" + lvVideo.SelectedItems[i].Text + ".mp4";
-                mediaKDCm.URL = VideoName;
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void btB3_Click(object sender, EventArgs e)
@@ -801,21 +813,29 @@ namespace newApp
                 if (lbcap.Text == "Nguyễn Hữu Cảnh")
                 {
                     dtQuestImg = iniConfig.RelativeToFullPath(@"...") + @"\aud\nhcNhoOnKe.mp3";
-                }
+                    common.phatAudio(dtQuestImg);
+                    showImage newf = new showImage();
+                    newf.Show();
+                    string strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\nhc\tonTho\";
 
-                common.phatAudio(dtQuestImg);
-                showImage newf = new showImage();
-                newf.Show();
-                string strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\nhc";
+                    foreach (string item in Directory.GetFiles(strVideoPath))
+                    {
+                        //string temp = item.Substring(item.LastIndexOf("\\") + 1);
+                        string verName = Path.GetFileName(item);
+                        newf.myList.Items.Add(verName);
+                        newf.lbCapMoi.Text = lbcap.Text;
+                        //lvVideo.Items.Add(verName);
 
-                foreach (string item in Directory.GetFiles(strVideoPath))
+                    }
+                }else if (lbcap.Text == "Nghề Gốm Mĩ Nghệ Biên Hoà")
                 {
-                    //string temp = item.Substring(item.LastIndexOf("\\") + 1);
-                    string verName = Path.GetFullPath(item);
-                    newf.myList.Items.Add(verName);
-                    //lvVideo.Items.Add(verName);
-
+                    //gomKeTen.mp3
+                    dtQuestImg = iniConfig.RelativeToFullPath(@"...") + @"\aud\gomKeTen.mp3";
+                    common.phatAudio(dtQuestImg);
                 }
+
+
+
             }
             catch(Exception ex)
             {
@@ -842,9 +862,14 @@ namespace newApp
                 if (lbcap.Text == "Nguyễn Hữu Cảnh")
                 {
                     dtQuestImg = iniConfig.RelativeToFullPath(@"...") + @"\aud\nhcKe.mp3";
+                    common.phatAudio(dtQuestImg);
+                }else if (lbcap.Text == "Nghề Gốm Mĩ Nghệ Biên Hoà")
+                {
+                    dtQuestImg = iniConfig.RelativeToFullPath(@"...") + @"\aud\gtGom.mp3";
+                    common.phatAudio(dtQuestImg);
                 }
                 
-                common.phatAudio(dtQuestImg);
+                
             }
             catch (Exception ex)
             {
@@ -988,14 +1013,23 @@ namespace newApp
 
         private void btAdQues_Click(object sender, EventArgs e)
         {
-            if (lbcap.Text== "Nguyễn Hữu Cảnh")
+            try
             {
-                List<string> cauHoi = new List<string> {"Tại sao lại có đền thờ Nguyễn Hữu Cảnh ?",
-                    "Hiện tại đền thờ Nguyễn Hữu Cảnh tọa lạc ở địa phương nào?", 
+                if (lbcap.Text == "Nguyễn Hữu Cảnh")
+                {
+                    List<string> cauHoi = new List<string> {"Tại sao lại có đền thờ Nguyễn Hữu Cảnh ?",
+                    "Hiện tại đền thờ Nguyễn Hữu Cảnh tọa lạc ở địa phương nào?",
                     "Tại sao lại có những con đường, ngôi trường mang tên Nguyễn Hữu Cảnh?" };
 
-                loadAdQuesCommon(cauHoi);
+                    loadAdQuesCommon(cauHoi);
+                }
             }
+            catch (Exception ex)
+            {
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
         public void loadAdQuesCommon(List<string> listQues)
         {
@@ -1164,87 +1198,127 @@ namespace newApp
 
         private void btVanDungCmVid_Click(object sender, EventArgs e)
         {
-            commonVideoPlayer newF = new commonVideoPlayer();
-            newF.Show();
-            string strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\nhc\danhNhanVid";
-
-            foreach (string item in Directory.GetFiles(strVideoPath))
+            try
             {
-                string temp = item.Substring(item.LastIndexOf("\\") + 1);
-                string verName = Path.GetFileName(item);
-                newF.listVideoCommon.Items.Add(verName);
-                //lvVideo.Items.Add(verName);
+                commonVideoPlayer newF = new commonVideoPlayer();
+                newF.Show();
+                string strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\nhc\danhNhanVid";
 
+                foreach (string item in Directory.GetFiles(strVideoPath))
+                {
+                    string temp = item.Substring(item.LastIndexOf("\\") + 1);
+                    string verName = Path.GetFileName(item);
+                    newF.listVideoCommon.Items.Add(verName);
+                    //lvVideo.Items.Add(verName);
+
+                }
             }
+            catch (Exception ex)
+            {
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void btVanDungCmImg_Click(object sender, EventArgs e)
         {
-            showImage newF = new showImage();
-            newF.Show();
-            string strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\nhc\danhNhan";
-
-            foreach (string item in Directory.GetFiles(strVideoPath))
+            try
             {
-                string temp = item.Substring(item.LastIndexOf("\\") + 1);
-                string verName = Path.GetFileName(item);
-                newF.myList.Items.Add(verName);
-                //lvVideo.Items.Add(verName);
+                showImage newF = new showImage();
+                newF.Show();
+                newF.lbCapMoi.Text = lbcap.Text;
+                newF.lbCap.Text = "danhNhan";
+                string strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\nhc\danhNhan";
 
+                foreach (string item in Directory.GetFiles(strVideoPath))
+                {
+                    string temp = item.Substring(item.LastIndexOf("\\") + 1);
+                    string verName = Path.GetFileName(item);
+                    newF.myList.Items.Add(verName);
+                    //lvVideo.Items.Add(verName);
+
+                }
             }
+            catch(Exception ex)
+            {
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void cbKpCm_TextChanged(object sender, EventArgs e)
         {
-            if (cbKpCm.Text == "Hoạt Động 1")
+            try
             {
-                lvKpCm.Items.Clear();
-                lvKpCm.Items.Add("Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?");
-                lvKpCm.Items.Add("Kể tên các sản phẩm của nghề gốm mĩ nghệ Biên Hoà.");
+                if (cbKpCm.Text == "Hoạt Động 1")
+                {
+                    lvKpCm.Items.Clear();
+                    lvKpCm.Items.Add("Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?");
+                    lvKpCm.Items.Add("Kể tên các sản phẩm của nghề gốm mĩ nghệ Biên Hoà.");
+                }
+                else if (cbKpCm.Text == "Hoạt Động 2")
+                {
+                    //Em hãy cho biết các bước cơ bản để làm nên một
+                    //sản phẩm gốm Biên Hoà
+                    lvKpCm.Items.Clear();
+                    lvKpCm.Items.Add("Em hãy cho biết các bước cơ bản để làm nên một sản phẩm gốm Biên Hoà");
+                }
             }
-            else if (cbKpCm.Text == "Hoạt Động 2")
+            catch(Exception ex)
             {
-                //Em hãy cho biết các bước cơ bản để làm nên một
-                //sản phẩm gốm Biên Hoà
-                lvKpCm.Items.Clear();
-                lvKpCm.Items.Add("Em hãy cho biết các bước cơ bản để làm nên một sản phẩm gốm Biên Hoà");
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void lvKpCm_DoubleClick(object sender, EventArgs e)
         {
-            for (int i = 0; i < lvKpCm.SelectedItems.Count; i++)
+            try
             {
-                //clearAnswer();
-                //clearVanDungcm();
-                string sltItem = lvKpCm.SelectedItems[i].Text;
+                
+                for (int i = 0; i < lvKpCm.SelectedItems.Count; i++)
+                {
+                    clearVdCmAns();
+                    //clearAnswer();
+                    //clearVanDungcm();
+                    string sltItem = lvKpCm.SelectedItems[i].Text;
                     lbKpCmHd.Text = sltItem;
-                string StrFolder = "";
-                string strName = "";
-                string strSubFolder = "";
-                if (cbKpCm.Text == "Hoạt Động 1")
-                {
-                    StrFolder = "hd1";
-                    if (lbKpCmHd.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                    string StrFolder = "";
+                    string strName = "";
+                    string strSubFolder = "";
+                    if (cbKpCm.Text == "Hoạt Động 1")
                     {
-                        strSubFolder = "ch1";
-                        strName = "hd1G" + (i + 1).ToString();
+                        StrFolder = "hd1";
+                        if (lbKpCmHd.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                        {
+                            strSubFolder = "ch1";
+                            strName = "hd1G" + (i + 1).ToString();
+                        }
+                        else
+                        {
+                            strSubFolder = "ch2";
+                            strName = "hd1C2G" + (i + 1).ToString();
+                        }
+
                     }
-                    else
+                    else if (cbKpCm.Text == "Hoạt Động 2")
                     {
-                        strSubFolder = "ch2";
-                        strName = "hd1C2G" + (i + 1).ToString();
+                        StrFolder = "hd2";
+                        strName = "quiTrinh";
                     }
-                    
-                }
-                else if (cbKpCm.Text == "Hoạt Động 2")
-                {
-                    StrFolder = "hd2";
-                    strName = "quiTrinh";
-                }
-                addImgKpCm(strName, StrFolder + @"\" + strSubFolder + @"\");
+                    addImgKpCm(strName, StrFolder + @"\" + strSubFolder + @"\");
                     lbKpCmHd2.Text = "Đáp Án Cho Câu Hỏi : ";
-            } 
+                }
+            }
+            catch(Exception ex)
+            {
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
         private void addImgKpCm(string StrNameImg,string strFolder)
         {
@@ -1255,47 +1329,167 @@ namespace newApp
 
         private void picKpCmShow_DoubleClick(object sender, EventArgs e)
         {
-            showImage newF = new showImage();
-            newF.Show();
-            string StrFolder = "";
-            string strSubFolder = "";
-            string strVideoPath = "";
-            if (cbKpCm.Text == "Hoạt Động 1")
+            try
             {
-                StrFolder = "hd1";
-                if (lbKpCmHd.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                showImage newF = new showImage();
+                newF.Show();
+                string StrFolder = "";
+                string strSubFolder = "";
+                string strVideoPath = "";
+
+                if (cbKpCm.Text == "Hoạt Động 1")
                 {
-                    strSubFolder = "ch1";
+                    StrFolder = "hd1";
+                    if (lbKpCmHd.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                    {
+                        strSubFolder = "ch1";
+                    }
+                    else
+                    {
+                        strSubFolder = "ch2";
+
+                    }
+                    strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\gom\" + StrFolder + @"\" + strSubFolder + @"\";
                 }
                 else
                 {
-                    strSubFolder = "ch2";
+                    StrFolder = "hd2";
+                    strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\gom\" + StrFolder + @"\step";
+                }
+
+
+                foreach (string item in Directory.GetFiles(strVideoPath))
+                {
+                    string temp = item.Substring(item.LastIndexOf("\\") + 1);
+                    string verName = Path.GetFileName(item);
+                    newF.myList.Items.Add(verName);
+                    newF.lbCap.Text = cbKpCm.Text;
+                    newF.lbques.Text = lbKpCmHd.Text;
+                    newF.lbCapMoi.Text = lbcap.Text;
+                    //lvVideo.Items.Add(verName);
 
                 }
-                strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\gom\" + StrFolder + @"\" + strSubFolder + @"\";
             }
-            else
+            catch(Exception ex)
             {
-                StrFolder = "hd2";
-                strVideoPath = iniConfig.RelativeToFullPath(@"...") + @"img\gom\" + StrFolder  + @"\step";
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-             
 
-            foreach (string item in Directory.GetFiles(strVideoPath))
+        }
+
+        private void btKpCm1_Click(object sender, EventArgs e)
+        {
+            try
             {
-                string temp = item.Substring(item.LastIndexOf("\\") + 1);
-                string verName = Path.GetFileName(item);
-                newF.myList.Items.Add(verName);
-                newF.lbCap.Text = cbKpCm.Text;
-                newF.lbques.Text = lbKpCmHd.Text;
-                //lvVideo.Items.Add(verName);
-
+                if (lbcap.Text == "Nghề Gốm Mĩ Nghệ Biên Hoà")
+                {
+                    if (cbKpCm.Text == "Hoạt Động 2")
+                    {
+                        lbKpCmA1.Text = iniConfig.readIni(iniPathC, "bai3", "gomChHd2As1");
+                    }else if (cbKpCm.Text == "Hoạt Động 1" && lbKpCmHd.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                    {
+                        lbKpCmA1.Text = iniConfig.readIni(iniPathC, "bai3", "gomCh1Hd1As1");
+                    }
+                    else
+                    {
+                        lbKpCmA1.Text = iniConfig.readIni(iniPathC, "bai3", "gomCh2Hd1As1");
+                    }
+                }
+            }catch(Exception ex)
+            {
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void picKpCmShow_Click(object sender, EventArgs e)
+        private void btKpCm2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (lbcap.Text == "Nghề Gốm Mĩ Nghệ Biên Hoà")
+                {
+                    if (cbKpCm.Text == "Hoạt Động 2")
+                    {
+                        lbKpCmA2.Text = iniConfig.readIni(iniPathC, "bai3", "gomChHd2As2");
+                    }
+                    else if (cbKpCm.Text == "Hoạt Động 1" && lbKpCmHd.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                    {
+                        lbKpCmA2.Text = iniConfig.readIni(iniPathC, "bai3", "gomCh1Hd1As2");
+                    }
+                    else
+                    {
+                        lbKpCmA2.Text = iniConfig.readIni(iniPathC, "bai3", "gomCh2Hd1As2");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
+        private void lbKpCm3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (lbcap.Text == "Nghề Gốm Mĩ Nghệ Biên Hoà")
+                {
+                    if (cbKpCm.Text == "Hoạt Động 2")
+                    {
+                        lbKpCmA3.Text = iniConfig.readIni(iniPathC, "bai3", "gomChHd2As3");
+                    }
+                    else if (cbKpCm.Text == "Hoạt Động 1" && lbKpCmHd.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                    {
+                        lbKpCmA3.Text = iniConfig.readIni(iniPathC, "bai3", "gomCh1Hd1As3");
+                    }
+                    else
+                    {
+                        lbKpCmA3.Text = iniConfig.readIni(iniPathC, "bai3", "gomCh2Hd1As3");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void lbKpCm4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (lbcap.Text == "Nghề Gốm Mĩ Nghệ Biên Hoà")
+                {
+                    if (cbKpCm.Text == "Hoạt Động 2")
+                    {
+                        lbKpCmA4.Text = iniConfig.readIni(iniPathC, "bai3", "gomChHd2As4");
+                    }
+                    else if (cbKpCm.Text == "Hoạt Động 1" && lbKpCmHd.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                    {
+                        lbKpCmA4.Text = iniConfig.readIni(iniPathC, "bai3", "gomCh1Hd1As4");
+                    }
+                    else
+                    {
+                        lbKpCmA4.Text = iniConfig.readIni(iniPathC, "bai3", "gomCh2Hd1As4");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.LogExport(ex.ToString());
+                MessageBox.Show(ex.ToString(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void clearVdCmAns()
+        {
+            lbKpCmA1.Text = "";
+            lbKpCmA2.Text = "";
+            lbKpCmA3.Text = "";
+            lbKpCmA4.Text = "";
         }
     }
 }

@@ -33,6 +33,7 @@
             this.listImg = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbHd = new System.Windows.Forms.Label();
             this.lbCh = new System.Windows.Forms.Label();
+            this.lbCap1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picChiTiet)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,12 +85,22 @@
             this.lbCh.Size = new System.Drawing.Size(0, 13);
             this.lbCh.TabIndex = 3;
             // 
+            // lbCap1
+            // 
+            this.lbCap1.AutoSize = true;
+            this.lbCap1.ForeColor = System.Drawing.Color.IndianRed;
+            this.lbCap1.Location = new System.Drawing.Point(386, 15);
+            this.lbCap1.Name = "lbCap1";
+            this.lbCap1.Size = new System.Drawing.Size(0, 13);
+            this.lbCap1.TabIndex = 3;
+            // 
             // showImage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(1264, 661);
+            this.Controls.Add(this.lbCap1);
             this.Controls.Add(this.lbCh);
             this.Controls.Add(this.lbHd);
             this.Controls.Add(this.lvChiTiet);
@@ -110,5 +121,6 @@
         private System.Windows.Forms.ColumnHeader listImg;
         private System.Windows.Forms.Label lbHd;
         private System.Windows.Forms.Label lbCh;
+        private System.Windows.Forms.Label lbCap1;
     }
 }

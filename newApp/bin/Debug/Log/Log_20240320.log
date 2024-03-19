@@ -1,0 +1,38 @@
+[3/20/2024 12:14:46 AM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai3\khoiDong'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 55
+[3/20/2024 12:21:39 AM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ1LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 862
+[3/20/2024 12:23:34 AM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ1LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 862
+[3/20/2024 12:25:09 AM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai3\khoiDong'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 55
+[3/20/2024 12:34:16 AM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\nhc\danhNhanVid'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 1207

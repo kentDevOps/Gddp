@@ -51,13 +51,13 @@ namespace newApp
                     else if (sltItem == "Hiện tại đền thờ Nguyễn Hữu Cảnh tọa lạc ở địa phương nào?")
                     {
                         lbAddQuesDetail.Text = sltItem;
-                        addImg("q2.jpg");
+                        addImg("q3.jpg");
                         lbAdQuesHead.Text = "Đáp Án Cho Câu Hỏi : " + sltItem;
                     }
                     else if (sltItem == "Tại sao lại có những con đường, ngôi trường mang tên Nguyễn Hữu Cảnh?")
                     {
                         lbAddQuesDetail.Text = sltItem;
-                        addImg("q3.jpg");
+                        addImg("q2.jpg");
                         lbAdQuesHead.Text = "Đáp Án Cho Câu Hỏi : " + sltItem;
                     }
                 }

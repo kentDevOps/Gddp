@@ -3,3 +3,245 @@
    at System.Drawing.Image.FromFile(String filename)
    at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V2\Gddp\newApp\Form1.cs:line 1079
    at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V2\Gddp\newApp\Form1.cs:line 1054
+[3/19/2024 10:45:45 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai3\khoiDong'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 55
+[3/19/2024 10:46:10 PM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ1LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 847
+[3/19/2024 10:46:15 PM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ2LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 806
+[3/19/2024 10:49:42 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai2'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 50
+[3/19/2024 10:50:19 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\nhc\danhNhanVid'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 1182
+[3/19/2024 10:50:55 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai2'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 50
+[3/19/2024 10:51:10 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai2'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 50
+[3/19/2024 10:54:22 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai2'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 50
+[3/19/2024 11:00:47 PM] System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 71
+[3/19/2024 11:01:20 PM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ2LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 816
+[3/19/2024 11:01:22 PM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ1LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 857
+[3/19/2024 11:01:30 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai3\khoiDong'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 55
+[3/19/2024 11:01:34 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai2'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 50
+[3/19/2024 11:03:07 PM] System.IO.FileNotFoundException: D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\gom\hd2\step\TranThuongXuyen.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 71
+[3/19/2024 11:03:12 PM] System.IO.FileNotFoundException: D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\gom\hd2\step\TrinhHoaiDuc.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 71
+[3/19/2024 11:03:14 PM] System.IO.FileNotFoundException: D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\gom\hd2\step\hd1G1.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 71
+[3/19/2024 11:03:21 PM] System.IO.FileNotFoundException: D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\gom\hd2\step\TrinhHoaiDuc.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 71
+[3/19/2024 11:03:24 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\nhc\danhNhanVid'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 1192
+[3/19/2024 11:03:43 PM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ2LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 816
+[3/19/2024 11:03:45 PM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ1LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 857
+[3/19/2024 11:07:00 PM] System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 71
+[3/19/2024 11:13:55 PM] System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 71
+[3/19/2024 11:29:43 PM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ1LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 860
+[3/19/2024 11:32:12 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai3\khoiDong'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 55
+[3/19/2024 11:33:39 PM] System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 107
+[3/19/2024 11:34:53 PM] System.IO.FileNotFoundException: D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\gom\hd2\step\a1.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 107
+[3/19/2024 11:35:00 PM] System.IO.FileNotFoundException: D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\gom\hd2\step\q2.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\showImage.cs:line 107
+[3/19/2024 11:37:16 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai2'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 50
+[3/19/2024 11:38:32 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\nhc\danhNhanVid'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 1196
+[3/19/2024 11:44:57 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\bin\Debug\img\nhc\danhNhanVid'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 1196
+[3/19/2024 11:46:09 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai3\khoiDong'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 55
+[3/19/2024 11:47:01 PM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\000_Media\bai3\khoiDong'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.kdLoad(String baiSo, String sectionVideo, String cap) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 93
+   at newApp.Form1.btKD_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 55
+[3/19/2024 11:47:07 PM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ1LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 861
+[3/19/2024 11:47:17 PM] System.ArgumentException: Value does not fall within the expected range.
+   at NAudio.MediaFoundation.MediaFoundationInterop.MFCreateSourceReaderFromURL(String pwszURL, IMFAttributes pAttributes, IMFSourceReader& ppSourceReader)
+   at NAudio.Wave.MediaFoundationReader.CreateReader(MediaFoundationReaderSettings settings)
+   at NAudio.Wave.MediaFoundationReader.Init(MediaFoundationReaderSettings initialSettings)
+   at NAudio.Wave.MediaFoundationReader..ctor(String file)
+   at NAudio.Wave.AudioFileReader.CreateReaderStream(String fileName)
+   at NAudio.Wave.AudioFileReader..ctor(String fileName)
+   at newApp.common.phatAudio(String filePath) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\common.cs:line 16
+   at newApp.Form1.picQ1LtCm_DoubleClick(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 861

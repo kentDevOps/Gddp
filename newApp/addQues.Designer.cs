@@ -184,7 +184,7 @@
             this.Controls.Add(this.lvAddQues);
             this.Name = "addQues";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "addQues";
+            this.Text = "Câu Hỏi Bổ Sung";
             this.Load += new System.EventHandler(this.addQues_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picAdQues)).EndInit();
             this.ResumeLayout(false);
