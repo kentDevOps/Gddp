@@ -1,0 +1,5 @@
+[3/19/2024 5:05:46 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\V2\Gddp\newApp\bin\Debug\img\gom\vanDungvanDungCh1.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgVanDungCm(String StrNameImg) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V2\Gddp\newApp\Form1.cs:line 1079
+   at newApp.Form1.lvVanDungQuesCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V2\Gddp\newApp\Form1.cs:line 1054

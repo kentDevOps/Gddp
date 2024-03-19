@@ -31,14 +31,16 @@
             this.picChiTiet = new System.Windows.Forms.PictureBox();
             this.lvChiTiet = new System.Windows.Forms.ListView();
             this.listImg = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lbHd = new System.Windows.Forms.Label();
+            this.lbCh = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picChiTiet)).BeginInit();
             this.SuspendLayout();
             // 
             // picChiTiet
             // 
-            this.picChiTiet.Location = new System.Drawing.Point(260, 31);
+            this.picChiTiet.Location = new System.Drawing.Point(273, 31);
             this.picChiTiet.Name = "picChiTiet";
-            this.picChiTiet.Size = new System.Drawing.Size(983, 618);
+            this.picChiTiet.Size = new System.Drawing.Size(970, 618);
             this.picChiTiet.TabIndex = 0;
             this.picChiTiet.TabStop = false;
             // 
@@ -46,6 +48,9 @@
             // 
             this.lvChiTiet.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.listImg});
+            this.lvChiTiet.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvChiTiet.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lvChiTiet.GridLines = true;
             this.lvChiTiet.HideSelection = false;
             this.lvChiTiet.Location = new System.Drawing.Point(22, 31);
             this.lvChiTiet.Name = "lvChiTiet";
@@ -54,17 +59,39 @@
             this.lvChiTiet.UseCompatibleStateImageBehavior = false;
             this.lvChiTiet.View = System.Windows.Forms.View.Details;
             this.lvChiTiet.SelectedIndexChanged += new System.EventHandler(this.lvChiTiet_SelectedIndexChanged);
+            this.lvChiTiet.DoubleClick += new System.EventHandler(this.lvChiTiet_DoubleClick);
             // 
             // listImg
             // 
             this.listImg.Text = "List Ảnh Chi Tiết";
-            this.listImg.Width = 200;
+            this.listImg.Width = 300;
+            // 
+            // lbHd
+            // 
+            this.lbHd.AutoSize = true;
+            this.lbHd.ForeColor = System.Drawing.Color.IndianRed;
+            this.lbHd.Location = new System.Drawing.Point(321, 5);
+            this.lbHd.Name = "lbHd";
+            this.lbHd.Size = new System.Drawing.Size(0, 13);
+            this.lbHd.TabIndex = 3;
+            // 
+            // lbCh
+            // 
+            this.lbCh.AutoSize = true;
+            this.lbCh.ForeColor = System.Drawing.Color.IndianRed;
+            this.lbCh.Location = new System.Drawing.Point(346, 9);
+            this.lbCh.Name = "lbCh";
+            this.lbCh.Size = new System.Drawing.Size(0, 13);
+            this.lbCh.TabIndex = 3;
             // 
             // showImage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(1264, 661);
+            this.Controls.Add(this.lbCh);
+            this.Controls.Add(this.lbHd);
             this.Controls.Add(this.lvChiTiet);
             this.Controls.Add(this.picChiTiet);
             this.Name = "showImage";
@@ -72,6 +99,7 @@
             this.Text = "Ảnh Chi Tiết ";
             ((System.ComponentModel.ISupportInitialize)(this.picChiTiet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -80,5 +108,7 @@
         private System.Windows.Forms.PictureBox picChiTiet;
         private System.Windows.Forms.ListView lvChiTiet;
         private System.Windows.Forms.ColumnHeader listImg;
+        private System.Windows.Forms.Label lbHd;
+        private System.Windows.Forms.Label lbCh;
     }
 }

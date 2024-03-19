@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             this.PHeader = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.PFunc = new System.Windows.Forms.Panel();
@@ -127,6 +127,7 @@
             this.lbLtHead1Cm = new System.Windows.Forms.Label();
             this.picIcoLtCm = new System.Windows.Forms.PictureBox();
             this.tVanDungCm = new System.Windows.Forms.TabPage();
+            this.btVanDungCmImg = new System.Windows.Forms.Button();
             this.btVanDungCmVid = new System.Windows.Forms.Button();
             this.btVanDungCmA4 = new System.Windows.Forms.Button();
             this.btVanDungCmA3 = new System.Windows.Forms.Button();
@@ -143,21 +144,21 @@
             this.addQuestion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.picIconVDcm = new System.Windows.Forms.PictureBox();
             this.tKhamPhaCm = new System.Windows.Forms.TabPage();
-            this.picKpCm = new System.Windows.Forms.PictureBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lbKpCm4 = new System.Windows.Forms.Button();
+            this.lbKpCm3 = new System.Windows.Forms.Button();
+            this.btKpCm2 = new System.Windows.Forms.Button();
+            this.btKpCm1 = new System.Windows.Forms.Button();
+            this.lbKpCmA4 = new System.Windows.Forms.Label();
+            this.lbKpCmA3 = new System.Windows.Forms.Label();
+            this.lbKpCmA2 = new System.Windows.Forms.Label();
+            this.lbKpCmA1 = new System.Windows.Forms.Label();
+            this.picKpCmShow = new System.Windows.Forms.PictureBox();
+            this.lbKpCmHd2 = new System.Windows.Forms.Label();
+            this.lbKpCmHd = new System.Windows.Forms.Label();
             this.cbKpCm = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lvKpCm = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.picKpCm = new System.Windows.Forms.PictureBox();
             this.PHeader.SuspendLayout();
             this.PFunc.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -195,8 +196,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picVanDungCm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconVDcm)).BeginInit();
             this.tKhamPhaCm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKpCmShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picKpCm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PHeader
@@ -997,7 +998,7 @@
             this.lvVideo.ForeColor = System.Drawing.Color.Yellow;
             this.lvVideo.HideSelection = false;
             this.lvVideo.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem1});
             this.lvVideo.Location = new System.Drawing.Point(639, 97);
             this.lvVideo.Name = "lvVideo";
             this.lvVideo.Size = new System.Drawing.Size(274, 382);
@@ -1361,6 +1362,7 @@
             // tVanDungCm
             // 
             this.tVanDungCm.BackColor = System.Drawing.Color.IndianRed;
+            this.tVanDungCm.Controls.Add(this.btVanDungCmImg);
             this.tVanDungCm.Controls.Add(this.btVanDungCmVid);
             this.tVanDungCm.Controls.Add(this.btVanDungCmA4);
             this.tVanDungCm.Controls.Add(this.btVanDungCmA3);
@@ -1382,6 +1384,19 @@
             this.tVanDungCm.TabIndex = 7;
             this.tVanDungCm.Text = "VanDungCm";
             // 
+            // btVanDungCmImg
+            // 
+            this.btVanDungCmImg.BackColor = System.Drawing.Color.IndianRed;
+            this.btVanDungCmImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVanDungCmImg.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btVanDungCmImg.Location = new System.Drawing.Point(326, 8);
+            this.btVanDungCmImg.Name = "btVanDungCmImg";
+            this.btVanDungCmImg.Size = new System.Drawing.Size(131, 31);
+            this.btVanDungCmImg.TabIndex = 34;
+            this.btVanDungCmImg.Text = "Xem Ảnh";
+            this.btVanDungCmImg.UseVisualStyleBackColor = false;
+            this.btVanDungCmImg.Click += new System.EventHandler(this.btVanDungCmImg_Click);
+            // 
             // btVanDungCmVid
             // 
             this.btVanDungCmVid.BackColor = System.Drawing.Color.IndianRed;
@@ -1393,15 +1408,16 @@
             this.btVanDungCmVid.TabIndex = 34;
             this.btVanDungCmVid.Text = "Xem Video";
             this.btVanDungCmVid.UseVisualStyleBackColor = false;
+            this.btVanDungCmVid.Click += new System.EventHandler(this.btVanDungCmVid_Click);
             // 
             // btVanDungCmA4
             // 
             this.btVanDungCmA4.BackColor = System.Drawing.Color.IndianRed;
             this.btVanDungCmA4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVanDungCmA4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btVanDungCmA4.Location = new System.Drawing.Point(850, 448);
+            this.btVanDungCmA4.Location = new System.Drawing.Point(850, 458);
             this.btVanDungCmA4.Name = "btVanDungCmA4";
-            this.btVanDungCmA4.Size = new System.Drawing.Size(63, 34);
+            this.btVanDungCmA4.Size = new System.Drawing.Size(63, 24);
             this.btVanDungCmA4.TabIndex = 26;
             this.btVanDungCmA4.Text = "Đáp Án";
             this.btVanDungCmA4.UseVisualStyleBackColor = false;
@@ -1412,9 +1428,9 @@
             this.btVanDungCmA3.BackColor = System.Drawing.Color.IndianRed;
             this.btVanDungCmA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVanDungCmA3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btVanDungCmA3.Location = new System.Drawing.Point(850, 406);
+            this.btVanDungCmA3.Location = new System.Drawing.Point(850, 422);
             this.btVanDungCmA3.Name = "btVanDungCmA3";
-            this.btVanDungCmA3.Size = new System.Drawing.Size(63, 34);
+            this.btVanDungCmA3.Size = new System.Drawing.Size(63, 24);
             this.btVanDungCmA3.TabIndex = 27;
             this.btVanDungCmA3.Text = "Đáp Án";
             this.btVanDungCmA3.UseVisualStyleBackColor = false;
@@ -1425,9 +1441,9 @@
             this.btVanDungCmA2.BackColor = System.Drawing.Color.IndianRed;
             this.btVanDungCmA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVanDungCmA2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btVanDungCmA2.Location = new System.Drawing.Point(850, 364);
+            this.btVanDungCmA2.Location = new System.Drawing.Point(850, 386);
             this.btVanDungCmA2.Name = "btVanDungCmA2";
-            this.btVanDungCmA2.Size = new System.Drawing.Size(63, 34);
+            this.btVanDungCmA2.Size = new System.Drawing.Size(63, 24);
             this.btVanDungCmA2.TabIndex = 28;
             this.btVanDungCmA2.Text = "Đáp Án";
             this.btVanDungCmA2.UseVisualStyleBackColor = false;
@@ -1438,9 +1454,9 @@
             this.btVanDungCmA1.BackColor = System.Drawing.Color.IndianRed;
             this.btVanDungCmA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVanDungCmA1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btVanDungCmA1.Location = new System.Drawing.Point(850, 322);
+            this.btVanDungCmA1.Location = new System.Drawing.Point(850, 350);
             this.btVanDungCmA1.Name = "btVanDungCmA1";
-            this.btVanDungCmA1.Size = new System.Drawing.Size(63, 34);
+            this.btVanDungCmA1.Size = new System.Drawing.Size(63, 24);
             this.btVanDungCmA1.TabIndex = 29;
             this.btVanDungCmA1.Text = "Đáp Án";
             this.btVanDungCmA1.UseVisualStyleBackColor = false;
@@ -1452,9 +1468,9 @@
             this.lbVanDungCmAns4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbVanDungCmAns4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVanDungCmAns4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbVanDungCmAns4.Location = new System.Drawing.Point(383, 448);
+            this.lbVanDungCmAns4.Location = new System.Drawing.Point(383, 458);
             this.lbVanDungCmAns4.Name = "lbVanDungCmAns4";
-            this.lbVanDungCmAns4.Size = new System.Drawing.Size(461, 34);
+            this.lbVanDungCmAns4.Size = new System.Drawing.Size(461, 24);
             this.lbVanDungCmAns4.TabIndex = 30;
             // 
             // lbVanDungCmAns3
@@ -1463,9 +1479,9 @@
             this.lbVanDungCmAns3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbVanDungCmAns3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVanDungCmAns3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbVanDungCmAns3.Location = new System.Drawing.Point(383, 406);
+            this.lbVanDungCmAns3.Location = new System.Drawing.Point(383, 422);
             this.lbVanDungCmAns3.Name = "lbVanDungCmAns3";
-            this.lbVanDungCmAns3.Size = new System.Drawing.Size(461, 34);
+            this.lbVanDungCmAns3.Size = new System.Drawing.Size(461, 24);
             this.lbVanDungCmAns3.TabIndex = 31;
             // 
             // lbVanDungCmAns2
@@ -1474,9 +1490,9 @@
             this.lbVanDungCmAns2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbVanDungCmAns2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVanDungCmAns2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbVanDungCmAns2.Location = new System.Drawing.Point(383, 364);
+            this.lbVanDungCmAns2.Location = new System.Drawing.Point(383, 386);
             this.lbVanDungCmAns2.Name = "lbVanDungCmAns2";
-            this.lbVanDungCmAns2.Size = new System.Drawing.Size(461, 34);
+            this.lbVanDungCmAns2.Size = new System.Drawing.Size(461, 24);
             this.lbVanDungCmAns2.TabIndex = 32;
             // 
             // lbVanDungCmAns1
@@ -1485,9 +1501,9 @@
             this.lbVanDungCmAns1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbVanDungCmAns1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVanDungCmAns1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbVanDungCmAns1.Location = new System.Drawing.Point(383, 322);
+            this.lbVanDungCmAns1.Location = new System.Drawing.Point(383, 350);
             this.lbVanDungCmAns1.Name = "lbVanDungCmAns1";
-            this.lbVanDungCmAns1.Size = new System.Drawing.Size(461, 34);
+            this.lbVanDungCmAns1.Size = new System.Drawing.Size(461, 24);
             this.lbVanDungCmAns1.TabIndex = 33;
             // 
             // picVanDungCm
@@ -1495,7 +1511,7 @@
             this.picVanDungCm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picVanDungCm.Location = new System.Drawing.Point(383, 91);
             this.picVanDungCm.Name = "picVanDungCm";
-            this.picVanDungCm.Size = new System.Drawing.Size(530, 193);
+            this.picVanDungCm.Size = new System.Drawing.Size(530, 230);
             this.picVanDungCm.TabIndex = 25;
             this.picVanDungCm.TabStop = false;
             // 
@@ -1505,9 +1521,9 @@
             this.lbVanDungAnsCm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbVanDungAnsCm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVanDungAnsCm.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbVanDungAnsCm.Location = new System.Drawing.Point(383, 284);
+            this.lbVanDungAnsCm.Location = new System.Drawing.Point(383, 324);
             this.lbVanDungAnsCm.Name = "lbVanDungAnsCm";
-            this.lbVanDungAnsCm.Size = new System.Drawing.Size(530, 34);
+            this.lbVanDungAnsCm.Size = new System.Drawing.Size(530, 21);
             this.lbVanDungAnsCm.TabIndex = 23;
             this.lbVanDungAnsCm.Text = "Đáp Án Về Khu Du Lịch Em Biết !";
             // 
@@ -1554,19 +1570,19 @@
             // tKhamPhaCm
             // 
             this.tKhamPhaCm.BackColor = System.Drawing.Color.IndianRed;
-            this.tKhamPhaCm.Controls.Add(this.button1);
-            this.tKhamPhaCm.Controls.Add(this.button2);
-            this.tKhamPhaCm.Controls.Add(this.button3);
-            this.tKhamPhaCm.Controls.Add(this.button4);
-            this.tKhamPhaCm.Controls.Add(this.label9);
-            this.tKhamPhaCm.Controls.Add(this.label10);
-            this.tKhamPhaCm.Controls.Add(this.label11);
-            this.tKhamPhaCm.Controls.Add(this.label12);
-            this.tKhamPhaCm.Controls.Add(this.pictureBox1);
-            this.tKhamPhaCm.Controls.Add(this.label13);
-            this.tKhamPhaCm.Controls.Add(this.label14);
+            this.tKhamPhaCm.Controls.Add(this.lbKpCm4);
+            this.tKhamPhaCm.Controls.Add(this.lbKpCm3);
+            this.tKhamPhaCm.Controls.Add(this.btKpCm2);
+            this.tKhamPhaCm.Controls.Add(this.btKpCm1);
+            this.tKhamPhaCm.Controls.Add(this.lbKpCmA4);
+            this.tKhamPhaCm.Controls.Add(this.lbKpCmA3);
+            this.tKhamPhaCm.Controls.Add(this.lbKpCmA2);
+            this.tKhamPhaCm.Controls.Add(this.lbKpCmA1);
+            this.tKhamPhaCm.Controls.Add(this.picKpCmShow);
+            this.tKhamPhaCm.Controls.Add(this.lbKpCmHd2);
+            this.tKhamPhaCm.Controls.Add(this.lbKpCmHd);
             this.tKhamPhaCm.Controls.Add(this.cbKpCm);
-            this.tKhamPhaCm.Controls.Add(this.listView1);
+            this.tKhamPhaCm.Controls.Add(this.lvKpCm);
             this.tKhamPhaCm.Controls.Add(this.picKpCm);
             this.tKhamPhaCm.Location = new System.Drawing.Point(4, 22);
             this.tKhamPhaCm.Name = "tKhamPhaCm";
@@ -1574,6 +1590,164 @@
             this.tKhamPhaCm.Size = new System.Drawing.Size(923, 487);
             this.tKhamPhaCm.TabIndex = 8;
             this.tKhamPhaCm.Text = "khamPhaCm";
+            // 
+            // lbKpCm4
+            // 
+            this.lbKpCm4.BackColor = System.Drawing.Color.IndianRed;
+            this.lbKpCm4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKpCm4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbKpCm4.Location = new System.Drawing.Point(849, 449);
+            this.lbKpCm4.Name = "lbKpCm4";
+            this.lbKpCm4.Size = new System.Drawing.Size(63, 34);
+            this.lbKpCm4.TabIndex = 37;
+            this.lbKpCm4.Text = "Đáp Án";
+            this.lbKpCm4.UseVisualStyleBackColor = false;
+            // 
+            // lbKpCm3
+            // 
+            this.lbKpCm3.BackColor = System.Drawing.Color.IndianRed;
+            this.lbKpCm3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKpCm3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbKpCm3.Location = new System.Drawing.Point(849, 407);
+            this.lbKpCm3.Name = "lbKpCm3";
+            this.lbKpCm3.Size = new System.Drawing.Size(63, 34);
+            this.lbKpCm3.TabIndex = 38;
+            this.lbKpCm3.Text = "Đáp Án";
+            this.lbKpCm3.UseVisualStyleBackColor = false;
+            // 
+            // btKpCm2
+            // 
+            this.btKpCm2.BackColor = System.Drawing.Color.IndianRed;
+            this.btKpCm2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btKpCm2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btKpCm2.Location = new System.Drawing.Point(849, 365);
+            this.btKpCm2.Name = "btKpCm2";
+            this.btKpCm2.Size = new System.Drawing.Size(63, 34);
+            this.btKpCm2.TabIndex = 39;
+            this.btKpCm2.Text = "Đáp Án";
+            this.btKpCm2.UseVisualStyleBackColor = false;
+            // 
+            // btKpCm1
+            // 
+            this.btKpCm1.BackColor = System.Drawing.Color.IndianRed;
+            this.btKpCm1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btKpCm1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btKpCm1.Location = new System.Drawing.Point(849, 323);
+            this.btKpCm1.Name = "btKpCm1";
+            this.btKpCm1.Size = new System.Drawing.Size(63, 34);
+            this.btKpCm1.TabIndex = 40;
+            this.btKpCm1.Text = "Đáp Án";
+            this.btKpCm1.UseVisualStyleBackColor = false;
+            // 
+            // lbKpCmA4
+            // 
+            this.lbKpCmA4.BackColor = System.Drawing.Color.IndianRed;
+            this.lbKpCmA4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbKpCmA4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKpCmA4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbKpCmA4.Location = new System.Drawing.Point(382, 449);
+            this.lbKpCmA4.Name = "lbKpCmA4";
+            this.lbKpCmA4.Size = new System.Drawing.Size(461, 34);
+            this.lbKpCmA4.TabIndex = 41;
+            // 
+            // lbKpCmA3
+            // 
+            this.lbKpCmA3.BackColor = System.Drawing.Color.IndianRed;
+            this.lbKpCmA3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbKpCmA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKpCmA3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbKpCmA3.Location = new System.Drawing.Point(382, 407);
+            this.lbKpCmA3.Name = "lbKpCmA3";
+            this.lbKpCmA3.Size = new System.Drawing.Size(461, 34);
+            this.lbKpCmA3.TabIndex = 42;
+            // 
+            // lbKpCmA2
+            // 
+            this.lbKpCmA2.BackColor = System.Drawing.Color.IndianRed;
+            this.lbKpCmA2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbKpCmA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKpCmA2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbKpCmA2.Location = new System.Drawing.Point(382, 365);
+            this.lbKpCmA2.Name = "lbKpCmA2";
+            this.lbKpCmA2.Size = new System.Drawing.Size(461, 34);
+            this.lbKpCmA2.TabIndex = 43;
+            // 
+            // lbKpCmA1
+            // 
+            this.lbKpCmA1.BackColor = System.Drawing.Color.IndianRed;
+            this.lbKpCmA1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbKpCmA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKpCmA1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbKpCmA1.Location = new System.Drawing.Point(382, 323);
+            this.lbKpCmA1.Name = "lbKpCmA1";
+            this.lbKpCmA1.Size = new System.Drawing.Size(461, 34);
+            this.lbKpCmA1.TabIndex = 44;
+            // 
+            // picKpCmShow
+            // 
+            this.picKpCmShow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picKpCmShow.Location = new System.Drawing.Point(382, 92);
+            this.picKpCmShow.Name = "picKpCmShow";
+            this.picKpCmShow.Size = new System.Drawing.Size(530, 193);
+            this.picKpCmShow.TabIndex = 36;
+            this.picKpCmShow.TabStop = false;
+            this.picKpCmShow.Click += new System.EventHandler(this.picKpCmShow_Click);
+            this.picKpCmShow.DoubleClick += new System.EventHandler(this.picKpCmShow_DoubleClick);
+            // 
+            // lbKpCmHd2
+            // 
+            this.lbKpCmHd2.BackColor = System.Drawing.Color.IndianRed;
+            this.lbKpCmHd2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbKpCmHd2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKpCmHd2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbKpCmHd2.Location = new System.Drawing.Point(382, 285);
+            this.lbKpCmHd2.Name = "lbKpCmHd2";
+            this.lbKpCmHd2.Size = new System.Drawing.Size(530, 34);
+            this.lbKpCmHd2.TabIndex = 34;
+            this.lbKpCmHd2.Text = "Đáp Án Về Khu Du Lịch Em Biết !";
+            // 
+            // lbKpCmHd
+            // 
+            this.lbKpCmHd.BackColor = System.Drawing.Color.IndianRed;
+            this.lbKpCmHd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbKpCmHd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKpCmHd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbKpCmHd.Location = new System.Drawing.Point(382, 46);
+            this.lbKpCmHd.Name = "lbKpCmHd";
+            this.lbKpCmHd.Size = new System.Drawing.Size(530, 43);
+            this.lbKpCmHd.TabIndex = 35;
+            this.lbKpCmHd.Text = "2. Chia Sẻ Với Các Bạn Về Một Khu Du Lịch Ở Đồng Nai Mà Em Đã Được Tham Quan !";
+            // 
+            // cbKpCm
+            // 
+            this.cbKpCm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbKpCm.ForeColor = System.Drawing.Color.IndianRed;
+            this.cbKpCm.FormattingEnabled = true;
+            this.cbKpCm.Location = new System.Drawing.Point(10, 48);
+            this.cbKpCm.Name = "cbKpCm";
+            this.cbKpCm.Size = new System.Drawing.Size(366, 26);
+            this.cbKpCm.TabIndex = 7;
+            this.cbKpCm.TextChanged += new System.EventHandler(this.cbKpCm_TextChanged);
+            // 
+            // lvKpCm
+            // 
+            this.lvKpCm.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            this.lvKpCm.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvKpCm.ForeColor = System.Drawing.Color.Brown;
+            this.lvKpCm.HideSelection = false;
+            this.lvKpCm.Location = new System.Drawing.Point(10, 75);
+            this.lvKpCm.Name = "lvKpCm";
+            this.lvKpCm.Size = new System.Drawing.Size(366, 409);
+            this.lvKpCm.TabIndex = 6;
+            this.lvKpCm.UseCompatibleStateImageBehavior = false;
+            this.lvKpCm.View = System.Windows.Forms.View.Details;
+            this.lvKpCm.DoubleClick += new System.EventHandler(this.lvKpCm_DoubleClick);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Câu Hỏi ";
+            this.columnHeader1.Width = 500;
             // 
             // picKpCm
             // 
@@ -1583,158 +1757,6 @@
             this.picKpCm.TabIndex = 2;
             this.picKpCm.TabStop = false;
             this.picKpCm.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
-            this.listView1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.ForeColor = System.Drawing.Color.Brown;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(10, 75);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(366, 409);
-            this.listView1.TabIndex = 6;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Câu Hỏi ";
-            this.columnHeader1.Width = 500;
-            // 
-            // cbKpCm
-            // 
-            this.cbKpCm.FormattingEnabled = true;
-            this.cbKpCm.Location = new System.Drawing.Point(10, 48);
-            this.cbKpCm.Name = "cbKpCm";
-            this.cbKpCm.Size = new System.Drawing.Size(366, 21);
-            this.cbKpCm.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(849, 449);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 34);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Đáp Án";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(849, 407);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 34);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "Đáp Án";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.IndianRed;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(849, 365);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(63, 34);
-            this.button3.TabIndex = 39;
-            this.button3.Text = "Đáp Án";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.IndianRed;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(849, 323);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(63, 34);
-            this.button4.TabIndex = 40;
-            this.button4.Text = "Đáp Án";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.IndianRed;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(382, 449);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(461, 34);
-            this.label9.TabIndex = 41;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.IndianRed;
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(382, 407);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(461, 34);
-            this.label10.TabIndex = 42;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.IndianRed;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label11.Location = new System.Drawing.Point(382, 365);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(461, 34);
-            this.label11.TabIndex = 43;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.IndianRed;
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label12.Location = new System.Drawing.Point(382, 323);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(461, 34);
-            this.label12.TabIndex = 44;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(382, 92);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(530, 193);
-            this.pictureBox1.TabIndex = 36;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.IndianRed;
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Location = new System.Drawing.Point(382, 285);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(530, 34);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "Đáp Án Về Khu Du Lịch Em Biết !";
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.IndianRed;
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label14.Location = new System.Drawing.Point(382, 46);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(530, 43);
-            this.label14.TabIndex = 35;
-            this.label14.Text = "2. Chia Sẻ Với Các Bạn Về Một Khu Du Lịch Ở Đồng Nai Mà Em Đã Được Tham Quan !";
             // 
             // Form1
             // 
@@ -1788,8 +1810,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picVanDungCm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconVDcm)).EndInit();
             this.tKhamPhaCm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picKpCmShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picKpCm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1911,19 +1933,20 @@
         private System.Windows.Forms.TabPage tKhamPhaCm;
         private System.Windows.Forms.PictureBox picKpCm;
         private System.Windows.Forms.ComboBox cbKpCm;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvKpCm;
         private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button lbKpCm4;
+        private System.Windows.Forms.Button lbKpCm3;
+        private System.Windows.Forms.Button btKpCm2;
+        private System.Windows.Forms.Button btKpCm1;
+        private System.Windows.Forms.Label lbKpCmA4;
+        private System.Windows.Forms.Label lbKpCmA3;
+        private System.Windows.Forms.Label lbKpCmA2;
+        private System.Windows.Forms.Label lbKpCmA1;
+        private System.Windows.Forms.PictureBox picKpCmShow;
+        private System.Windows.Forms.Label lbKpCmHd2;
+        private System.Windows.Forms.Label lbKpCmHd;
+        private System.Windows.Forms.Button btVanDungCmImg;
     }
 }
 
