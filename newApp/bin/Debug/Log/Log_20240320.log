@@ -36,3 +36,251 @@
    at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
    at System.IO.Directory.GetFiles(String path)
    at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02_Code\03_c#\00_AppGd\Gddp V1\V3\Gddp\newApp\Form1.cs:line 1207
+[3/20/2024 9:41:34 AM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\nhc\danhNhanVid'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1207
+[3/20/2024 9:43:12 AM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\nhc\danhNhanVid'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1207
+[3/20/2024 10:02:56 AM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\gom\hd2\step\hsChup1.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\showImage.cs:line 78
+[3/20/2024 10:09:43 AM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\gom\hd2\step\hsChup1.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\showImage.cs:line 80
+[3/20/2024 10:23:16 AM] System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\nhc\danhNhanVid'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1207
+[3/20/2024 10:34:58 AM] System.ArgumentNullException: Value cannot be null.
+Parameter name: path
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1218
+[3/20/2024 10:39:03 AM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\nhc\tonTho\hsChup1.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\showImage.cs:line 120
+[3/20/2024 11:01:57 AM] System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedIndexCollection.get_Item(Int32 index)
+   at newApp.commonVideoPlayer.lvVideoCommon_SelectedIndexChanged(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\commonVideoPlayer.cs:line 43
+[3/20/2024 11:02:07 AM] System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedIndexCollection.get_Item(Int32 index)
+   at newApp.commonVideoPlayer.lvVideoCommon_SelectedIndexChanged(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\commonVideoPlayer.cs:line 43
+[3/20/2024 1:35:53 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1404
+[3/20/2024 1:35:56 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1404
+[3/20/2024 1:35:59 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1404
+[3/20/2024 1:38:45 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1404
+[3/20/2024 1:39:36 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1404
+[3/20/2024 1:40:19 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1368
+[3/20/2024 1:40:25 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1368
+[3/20/2024 1:40:29 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1368
+[3/20/2024 1:43:59 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1368
+[3/20/2024 1:44:08 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1368
+[3/20/2024 1:46:01 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder)
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e)
+[3/20/2024 1:47:46 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1428
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1368
+[3/20/2024 2:03:03 PM] System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedListViewItemCollection.get_Item(Int32 index)
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1343
+[3/20/2024 2:03:09 PM] System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedListViewItemCollection.get_Item(Int32 index)
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1343
+[3/20/2024 2:03:15 PM] System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedListViewItemCollection.get_Item(Int32 index)
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1343
+[3/20/2024 2:03:22 PM] System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedListViewItemCollection.get_Item(Int32 index)
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1379
+[3/20/2024 2:03:45 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\gom\\\.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1429
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1368
+[3/20/2024 2:05:03 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\gom\\\.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1429
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1368
+[3/20/2024 2:05:39 PM] System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedListViewItemCollection.get_Item(Int32 index)
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1343
+[3/20/2024 2:37:14 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\btt\hd2\step\hsChup1.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\showImage.cs:line 152
+[3/20/2024 3:04:48 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1310
+[3/20/2024 3:16:07 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\btt\hd2\step\bb1.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\showImage.cs:line 152
+[3/20/2024 3:24:59 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1310
+[3/20/2024 3:25:45 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at newApp.Form1.btVanDungCmVid_Click(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1310
+[3/20/2024 4:23:37 PM] System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NewNormalizePath(String path, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.Form1.addImgKpCm(String StrNameImg, String strFolder) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1560
+   at newApp.Form1.lvKpCm_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\Form1.cs:line 1535
+[3/20/2024 4:43:16 PM] System.IO.FileNotFoundException: D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\bin\Debug\img\vanMieu\hd1\\hd1Ch1.jpg
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at System.Drawing.Image.FromFile(String filename)
+   at newApp.showImage.lvChiTiet_DoubleClick(Object sender, EventArgs e) in D:\02.Study\01.C#\01_Winform\03_AppGDDP\V3\Gddp\newApp\showImage.cs:line 202

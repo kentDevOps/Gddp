@@ -52,34 +52,51 @@ namespace newApp
             {
                 if (lbCap1.Text == "Nghề Gốm Mĩ Nghệ Biên Hoà")
                 {
-                    string strVideoPath1 = iniConfig.RelativeToFullPath(@"...") + @"img\gom\";
-                    for (int i = 0; i < lvChiTiet.Items.Count - 1; i++)
+                    if (lbHd.Text == "Hs")
                     {
-                        string sltItem = lvChiTiet.SelectedItems[i].Text;
-                        string StrFolder = "";
-                        string subFolder = "";
-                        if (lbHd.Text == "Hoạt Động 1")
+                        string strVideoPath1 = iniConfig.RelativeToFullPath(@"...") + @"img\gom\hsChup";
+                        for (int i = 0; i < lvChiTiet.Items.Count - 1; i++)
                         {
-                            StrFolder = "hd1";
-                            if (lbques.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                            string sltItem = lvChiTiet.SelectedItems[i].Text;
+                            picChiTiet.Image = Image.FromFile(strVideoPath1 + @"\" + sltItem);
+                            picChiTiet.SizeMode = PictureBoxSizeMode.StretchImage;
+                            return;
+                        }
+                    }
+                    else
+                    {
+
+                        string strVideoPath1 = iniConfig.RelativeToFullPath(@"...") + @"img\gom\";
+                        for (int i = 0; i < lvChiTiet.Items.Count - 1; i++)
+                        {
+                            string sltItem = lvChiTiet.SelectedItems[i].Text;
+                            string StrFolder = "";
+                            string subFolder = "";
+                            if (lbHd.Text == "Hoạt Động 1")
                             {
-                                subFolder = "ch1";
+                                StrFolder = "hd1";
+                                if (lbques.Text == "Nghề gốm mĩ nghệ Biên Hoà được hình thành từ khi nào ? Ở đâu?")
+                                {
+                                    subFolder = "ch1";
+                                }
+                                else
+                                {
+                                    subFolder = "ch2";
+                                }
                             }
                             else
                             {
-                                subFolder = "ch2";
+                                StrFolder = "hd2";
+                                subFolder = "step";
                             }
+                            picChiTiet.Image = Image.FromFile(strVideoPath1 + StrFolder + @"\" + subFolder + @"\" + sltItem);
+                            picChiTiet.SizeMode = PictureBoxSizeMode.StretchImage;
+                            return;
                         }
-                        else
-                        {
-                            StrFolder = "hd2";
-                            subFolder = "step";
-                        }
-                        picChiTiet.Image = Image.FromFile(strVideoPath1 + StrFolder + @"\" + subFolder + @"\" + sltItem);
-                        picChiTiet.SizeMode = PictureBoxSizeMode.StretchImage;
-                        return;
                     }
-                }else if (lbCap1.Text == "Nguyễn Hữu Cảnh")
+
+                }
+                else if (lbCap1.Text == "Nguyễn Hữu Cảnh")
                 {
                     if (lbHd.Text == "danhNhan")
                     {
@@ -108,7 +125,85 @@ namespace newApp
                     }
 
                 }
+                else if (lbCap1.Text == "Bưởi Tân Triều")
+                {
+                    if (lbHd.Text == "bocBuoi")
+                    {
+                        string strVideoPath1 = iniConfig.RelativeToFullPath(@"...") + @"img\btt\vanDung\bocBuoi";
+                        for (int i = 0; i < lvChiTiet.Items.Count - 1; i++)
+                        {
+                            string sltItem = lvChiTiet.SelectedItems[i].Text;
+                            picChiTiet.Image = Image.FromFile(strVideoPath1 + @"\" + sltItem);
+                            picChiTiet.SizeMode = PictureBoxSizeMode.StretchImage;
+                            return;
+                        }
+                    }
+                    else if (lbHd.Text == "cayTrai")
+                    {
+                        string strVideoPath1 = iniConfig.RelativeToFullPath(@"...") + @"img\btt\vanDung\cayTrai";
+                        for (int i = 0; i < lvChiTiet.Items.Count - 1; i++)
+                        {
+                            string sltItem = lvChiTiet.SelectedItems[i].Text;
+                            picChiTiet.Image = Image.FromFile(strVideoPath1 + @"\" + sltItem);
+                            picChiTiet.SizeMode = PictureBoxSizeMode.StretchImage;
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        string strVideoPath1 = iniConfig.RelativeToFullPath(@"...") + @"img\btt\";
+                        for (int i = 0; i < lvChiTiet.Items.Count - 1; i++)
+                        {
+                            string sltItem = lvChiTiet.SelectedItems[i].Text;
+                            string StrFolder = "";
+                            string subFolder = "";
+                            if (lbHd.Text == "Hoạt Động 1")
+                            {
+                                StrFolder = "hd1";
+                                if (lbques.Text == "1 - Tìm hiểu về bưởi Tân Triều")
+                                {
+                                    subFolder = "ch1";
+                                }
+                                else
+                                {
+                                    subFolder = "ch2";
+                                }
+                            }
+                            else
+                            {
+                                StrFolder = "hd2";
+                                subFolder = "step";
+                            }
+                            picChiTiet.Image = Image.FromFile(strVideoPath1 + StrFolder + @"\" + subFolder + @"\" + sltItem);
+                            picChiTiet.SizeMode = PictureBoxSizeMode.StretchImage;
+                            return;
+                        }
+                    }
 
+                }
+                else
+                {
+                    string strVideoPath1 = iniConfig.RelativeToFullPath(@"...") + @"img\vanMieu\";
+                    for (int i = 0; i < lvChiTiet.Items.Count - 1; i++)
+                    {
+                        string sltItem = lvChiTiet.SelectedItems[i].Text;
+                        string StrFolder = "";
+                        string subFolder = "";
+                        if (lbHd.Text == "Hoạt Động 1")
+                        {
+                            StrFolder = @"hd1\ch1";
+
+                        }
+                        else
+                        {
+                            StrFolder = "hd2";
+                            subFolder = "step";
+                        }
+                        picChiTiet.Image = Image.FromFile(strVideoPath1 + StrFolder + @"\" + subFolder + @"\" + sltItem);
+                        picChiTiet.SizeMode = PictureBoxSizeMode.StretchImage;
+                        return;
+                    }
+                }
             }
             catch (Exception ex)
             {

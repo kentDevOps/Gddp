@@ -32,6 +32,7 @@
             this.lvVideoCommon = new System.Windows.Forms.ListView();
             this.videoList = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mediaPlayerCommon = new AxWMPLib.AxWindowsMediaPlayer();
+            this.lbCapMedia = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.mediaPlayerCommon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             this.lvVideoCommon.TabIndex = 1;
             this.lvVideoCommon.UseCompatibleStateImageBehavior = false;
             this.lvVideoCommon.View = System.Windows.Forms.View.Details;
+            this.lvVideoCommon.SelectedIndexChanged += new System.EventHandler(this.lvVideoCommon_SelectedIndexChanged);
             // 
             // videoList
             // 
@@ -64,12 +66,22 @@
             this.mediaPlayerCommon.Size = new System.Drawing.Size(965, 622);
             this.mediaPlayerCommon.TabIndex = 2;
             // 
+            // lbCapMedia
+            // 
+            this.lbCapMedia.AutoSize = true;
+            this.lbCapMedia.Location = new System.Drawing.Point(333, 6);
+            this.lbCapMedia.Name = "lbCapMedia";
+            this.lbCapMedia.Size = new System.Drawing.Size(35, 13);
+            this.lbCapMedia.TabIndex = 3;
+            this.lbCapMedia.Text = "label1";
+            // 
             // commonVideoPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(1264, 661);
+            this.Controls.Add(this.lbCapMedia);
             this.Controls.Add(this.mediaPlayerCommon);
             this.Controls.Add(this.lvVideoCommon);
             this.Name = "commonVideoPlayer";
@@ -77,6 +89,7 @@
             this.Text = "Trình Phát Video";
             ((System.ComponentModel.ISupportInitialize)(this.mediaPlayerCommon)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -85,5 +98,6 @@
         private System.Windows.Forms.ListView lvVideoCommon;
         private System.Windows.Forms.ColumnHeader videoList;
         private AxWMPLib.AxWindowsMediaPlayer mediaPlayerCommon;
+        private System.Windows.Forms.Label lbCapMedia;
     }
 }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             this.PHeader = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.PFunc = new System.Windows.Forms.Panel();
@@ -49,6 +49,8 @@
             this.notBook = new System.Windows.Forms.TabControl();
             this.tKhoiDong = new System.Windows.Forms.TabPage();
             this.picIconKd = new System.Windows.Forms.PictureBox();
+            this.audioTool = new AxWMPLib.AxWindowsMediaPlayer();
+            this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tKhamPha = new System.Windows.Forms.TabPage();
@@ -87,6 +89,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.lbDtRs1 = new System.Windows.Forms.Label();
             this.tVanDung = new System.Windows.Forms.TabPage();
+            this.mediaVanDungB1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.picVanDungB1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -97,7 +100,9 @@
             this.listVideo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbKdCmCap = new System.Windows.Forms.Label();
             this.picIconKdCm = new System.Windows.Forms.PictureBox();
+            this.mediaKDCm = new AxWMPLib.AxWindowsMediaPlayer();
             this.tLTCommon = new System.Windows.Forms.TabPage();
+            this.btLtImgHs = new System.Windows.Forms.Button();
             this.btAdQues = new System.Windows.Forms.Button();
             this.btLtCm10 = new System.Windows.Forms.Button();
             this.btLtCm9 = new System.Windows.Forms.Button();
@@ -155,10 +160,6 @@
             this.lvKpCm = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.picKpCm = new System.Windows.Forms.PictureBox();
-            this.audioTool = new AxWMPLib.AxWindowsMediaPlayer();
-            this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.mediaVanDungB1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.mediaKDCm = new AxWMPLib.AxWindowsMediaPlayer();
             this.PHeader.SuspendLayout();
             this.PFunc.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -166,6 +167,8 @@
             this.notBook.SuspendLayout();
             this.tKhoiDong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconKd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.audioTool)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
             this.tKhamPha.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconKp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDanhThang3)).BeginInit();
@@ -180,10 +183,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.picQuestDt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconLt)).BeginInit();
             this.tVanDung.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaVanDungB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVanDungB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconVd)).BeginInit();
             this.tKdCommon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconKdCm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaKDCm)).BeginInit();
             this.tLTCommon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picQ2LtCm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picQ1LtCm)).BeginInit();
@@ -194,10 +199,6 @@
             this.tKhamPhaCm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picKpCmShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picKpCm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.audioTool)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaVanDungB1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaKDCm)).BeginInit();
             this.SuspendLayout();
             // 
             // PHeader
@@ -437,6 +438,24 @@
             this.picIconKd.Size = new System.Drawing.Size(107, 33);
             this.picIconKd.TabIndex = 2;
             this.picIconKd.TabStop = false;
+            // 
+            // audioTool
+            // 
+            this.audioTool.Enabled = true;
+            this.audioTool.Location = new System.Drawing.Point(37, 51);
+            this.audioTool.Name = "audioTool";
+            this.audioTool.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("audioTool.OcxState")));
+            this.audioTool.Size = new System.Drawing.Size(847, 52);
+            this.audioTool.TabIndex = 1;
+            // 
+            // mediaPlayer
+            // 
+            this.mediaPlayer.Enabled = true;
+            this.mediaPlayer.Location = new System.Drawing.Point(124, 143);
+            this.mediaPlayer.Name = "mediaPlayer";
+            this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
+            this.mediaPlayer.Size = new System.Drawing.Size(678, 323);
+            this.mediaPlayer.TabIndex = 1;
             // 
             // label3
             // 
@@ -897,6 +916,15 @@
             this.tVanDung.TabIndex = 3;
             this.tVanDung.Text = "VanDung";
             // 
+            // mediaVanDungB1
+            // 
+            this.mediaVanDungB1.Enabled = true;
+            this.mediaVanDungB1.Location = new System.Drawing.Point(439, 113);
+            this.mediaVanDungB1.Name = "mediaVanDungB1";
+            this.mediaVanDungB1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaVanDungB1.OcxState")));
+            this.mediaVanDungB1.Size = new System.Drawing.Size(460, 355);
+            this.mediaVanDungB1.TabIndex = 6;
+            // 
             // picVanDungB1
             // 
             this.picVanDungB1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -971,7 +999,7 @@
             this.lvVideo.ForeColor = System.Drawing.Color.Yellow;
             this.lvVideo.HideSelection = false;
             this.lvVideo.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5});
+            listViewItem1});
             this.lvVideo.Location = new System.Drawing.Point(639, 97);
             this.lvVideo.Name = "lvVideo";
             this.lvVideo.Size = new System.Drawing.Size(274, 382);
@@ -1006,9 +1034,19 @@
             this.picIconKdCm.TabIndex = 3;
             this.picIconKdCm.TabStop = false;
             // 
+            // mediaKDCm
+            // 
+            this.mediaKDCm.Enabled = true;
+            this.mediaKDCm.Location = new System.Drawing.Point(10, 106);
+            this.mediaKDCm.Name = "mediaKDCm";
+            this.mediaKDCm.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaKDCm.OcxState")));
+            this.mediaKDCm.Size = new System.Drawing.Size(613, 373);
+            this.mediaKDCm.TabIndex = 6;
+            // 
             // tLTCommon
             // 
             this.tLTCommon.BackColor = System.Drawing.Color.IndianRed;
+            this.tLTCommon.Controls.Add(this.btLtImgHs);
             this.tLTCommon.Controls.Add(this.btAdQues);
             this.tLTCommon.Controls.Add(this.btLtCm10);
             this.tLTCommon.Controls.Add(this.btLtCm9);
@@ -1039,6 +1077,19 @@
             this.tLTCommon.Size = new System.Drawing.Size(923, 487);
             this.tLTCommon.TabIndex = 6;
             this.tLTCommon.Text = "luyenTapCm";
+            // 
+            // btLtImgHs
+            // 
+            this.btLtImgHs.BackColor = System.Drawing.Color.IndianRed;
+            this.btLtImgHs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLtImgHs.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btLtImgHs.Location = new System.Drawing.Point(315, 8);
+            this.btLtImgHs.Name = "btLtImgHs";
+            this.btLtImgHs.Size = new System.Drawing.Size(131, 31);
+            this.btLtImgHs.TabIndex = 35;
+            this.btLtImgHs.Text = "Xem Ảnh HS";
+            this.btLtImgHs.UseVisualStyleBackColor = false;
+            this.btLtImgHs.Click += new System.EventHandler(this.btLtImgHs_Click);
             // 
             // btAdQues
             // 
@@ -1478,6 +1529,7 @@
             this.picVanDungCm.Size = new System.Drawing.Size(530, 230);
             this.picVanDungCm.TabIndex = 25;
             this.picVanDungCm.TabStop = false;
+            this.picVanDungCm.DoubleClick += new System.EventHandler(this.picVanDungCm_DoubleClick);
             // 
             // lbVanDungAnsCm
             // 
@@ -1726,42 +1778,6 @@
             this.picKpCm.TabStop = false;
             this.picKpCm.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // audioTool
-            // 
-            this.audioTool.Enabled = true;
-            this.audioTool.Location = new System.Drawing.Point(37, 51);
-            this.audioTool.Name = "audioTool";
-            this.audioTool.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("audioTool.OcxState")));
-            this.audioTool.Size = new System.Drawing.Size(847, 52);
-            this.audioTool.TabIndex = 1;
-            // 
-            // mediaPlayer
-            // 
-            this.mediaPlayer.Enabled = true;
-            this.mediaPlayer.Location = new System.Drawing.Point(124, 143);
-            this.mediaPlayer.Name = "mediaPlayer";
-            this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
-            this.mediaPlayer.Size = new System.Drawing.Size(678, 323);
-            this.mediaPlayer.TabIndex = 1;
-            // 
-            // mediaVanDungB1
-            // 
-            this.mediaVanDungB1.Enabled = true;
-            this.mediaVanDungB1.Location = new System.Drawing.Point(439, 113);
-            this.mediaVanDungB1.Name = "mediaVanDungB1";
-            this.mediaVanDungB1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaVanDungB1.OcxState")));
-            this.mediaVanDungB1.Size = new System.Drawing.Size(460, 355);
-            this.mediaVanDungB1.TabIndex = 6;
-            // 
-            // mediaKDCm
-            // 
-            this.mediaKDCm.Enabled = true;
-            this.mediaKDCm.Location = new System.Drawing.Point(10, 106);
-            this.mediaKDCm.Name = "mediaKDCm";
-            this.mediaKDCm.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaKDCm.OcxState")));
-            this.mediaKDCm.Size = new System.Drawing.Size(613, 373);
-            this.mediaKDCm.TabIndex = 6;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1784,6 +1800,8 @@
             this.notBook.ResumeLayout(false);
             this.tKhoiDong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIconKd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.audioTool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).EndInit();
             this.tKhamPha.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIconKp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDanhThang3)).EndInit();
@@ -1798,10 +1816,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.picQuestDt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconLt)).EndInit();
             this.tVanDung.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mediaVanDungB1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVanDungB1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIconVd)).EndInit();
             this.tKdCommon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picIconKdCm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaKDCm)).EndInit();
             this.tLTCommon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picQ2LtCm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picQ1LtCm)).EndInit();
@@ -1812,10 +1832,6 @@
             this.tKhamPhaCm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picKpCmShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picKpCm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.audioTool)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaVanDungB1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mediaKDCm)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1951,6 +1967,7 @@
         private System.Windows.Forms.Label lbKpCmHd2;
         private System.Windows.Forms.Label lbKpCmHd;
         private System.Windows.Forms.Button btVanDungCmImg;
+        private System.Windows.Forms.Button btLtImgHs;
     }
 }
 

@@ -76,6 +76,7 @@
             this.lbDes.Name = "lbDes";
             this.lbDes.Size = new System.Drawing.Size(597, 35);
             this.lbDes.TabIndex = 2;
+            this.lbDes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // showAnh
             // 
